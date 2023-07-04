@@ -5,6 +5,7 @@ body {
   background:#6E9BC5;
   color: #ffffff;
   font-family: Helvetica;
+  font-weight: 700;
 }
 footer {
   display: block;
@@ -20,11 +21,4 @@ footer {
 .not-found a{
   color: #4979ff;
   text-decoration: underline;
-}
-
-p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 17px;
-  letter-spacing: 0.15em;
 }
