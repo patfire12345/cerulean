@@ -5,7 +5,7 @@ import { data } from "../components/data";
 
 const Navbar = () => {
   return (
-    <nav className={NavbarCSS.nav}>
+    <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>
         <Image
           src="/logo.png"
@@ -15,10 +15,19 @@ const Navbar = () => {
           quality={100}
         />
       </div>
-      {data.nav.titles.map((title, index) => {
-        return <Link href={"/".concat(data.nav.links[index])}>{title}</Link>;
-      })}
-    </nav>
+      <div className={NavbarCSS.linkcontainer}>
+        {data.nav.titles.map((title, index) => {
+          return (
+            <Link
+              href={"/".concat(data.nav.links[index])}
+              className={NavbarCSS.link}
+            >
+              {title}
+            </Link>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
