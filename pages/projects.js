@@ -4,8 +4,8 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Projects</title>
-        <meta name="keywords" content="ninjas" />
+        <title>Cerulean | Projects</title>
+        <meta name="keywords" content="cerulean" />
       </Head>
       <div>
         <h1>Projects</h1>

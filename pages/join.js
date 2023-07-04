@@ -4,8 +4,8 @@ const Join = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Join Us</title>
-        <meta name="keywords" content="ninjas" />
+        <title>Cerulean | Join Us</title>
+        <meta name="keywords" content="cerulean" />
       </Head>
       <div>
         <h1>Join Us</h1>

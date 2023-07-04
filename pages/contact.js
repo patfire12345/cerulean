@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Contact Us</title>
-        <meta name="keywords" content="ninjas" />
+        <title>Cerulean | Contact Us</title>
+        <meta name="keywords" content="cerulean" />
       </Head>
       <div>
         <h1>Contact Us</h1>
