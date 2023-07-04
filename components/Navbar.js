@@ -16,11 +16,7 @@ const Navbar = () => {
         />
       </div>
       {data.nav.titles.map((title, index) => {
-        return (
-          <Link href={"/".concat(data.nav.links[index])}>
-            <a>{title}</a>
-          </Link>
-        );
+        return <Link href={"/".concat(data.nav.links[index])}>{title}</Link>;
       })}
     </nav>
   );
