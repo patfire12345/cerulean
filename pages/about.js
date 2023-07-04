@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { data } from "./data.js";
+import { data } from "../components/data.js";
 
 const About = () => {
   return (
