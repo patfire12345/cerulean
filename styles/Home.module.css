@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  margin: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 525px;
+  width: 700px;
+}
+
+.imagetext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 525px;
+  width: 700px;
+  position: absolute;
+  background-color: #0E0E0E;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.1px;
+  letter-spacing: 0.15em;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+}
+
+.text {
+
+}

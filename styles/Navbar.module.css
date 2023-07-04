@@ -1,0 +1,27 @@
+.nav {
+  width: 100vw;
+  height: auto;
+
+  padding: 10px 0;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  background: #ffffff;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.1px;
+  letter-spacing: 0.05em;
+}
+.nav a {
+  margin-left: 12px;
+  display: inline-block;
+  height: 100%;
+}
+.logo {
+  float: left;
+  margin-right: auto;
+}
