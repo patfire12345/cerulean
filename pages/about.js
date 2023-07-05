@@ -11,7 +11,7 @@ const About = () => {
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <div className={AboutCSS.title}>About Us</div>
+        <div className={AboutCSS.title}>{data.about.title}</div>
         <div className={AboutCSS.description}>{data.about.aboutUs}</div>
         <div className={AboutCSS.subtitle}>{data.about.subtitles.core}</div>
         <div className={AboutCSS.valuecontainer}>
