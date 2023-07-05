@@ -11,7 +11,7 @@ export const data = {
   },
   about: {
     aboutUs:
-      "Cerulean non-profit organization was initially founded in 2020 to unite the French, English and Vietnamese cultures. To date, Cerulean has successfully connected more than 300 participants to English and French volunteer tutors from Vietnam and abroad. Noticing how impactful education is on the future generation, Cerulean strongly believes that providing quality education for all is fundamental to creating a peaceful and prosperous world. The organization's new mission is to support all children across Vietnam to access a quality and inclusive education. Cerulean will be working to provide quality learning opportunities that prepare Vietnamese children with the knowledge and skill they need to acquire a healthier and better life. ______ Cerulean Organization",
+      "Cerulean non-profit organization was initially founded in 2020 to unite the French, English and Vietnamese cultures. To date, Cerulean has successfully connected more than 300 participants to English and French volunteer tutors from Vietnam and abroad. Noticing how impactful education is on the future generation, Cerulean strongly believes that providing quality education for all is fundamental to creating a peaceful and prosperous world. The organization's new mission is to support all children across Vietnam to access a quality and inclusive education. Cerulean will be working to provide quality learning opportunities that prepare Vietnamese children with the knowledge and skill they need to acquire a healthier and better life. \n \n Cerulean Organization",
     subtitles: {
       core: "Our Core Values",
       story: "Our Story",

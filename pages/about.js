@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { data } from "../components/data.js";
 import AboutCSS from "../styles/About.module.css";
 
@@ -25,7 +26,24 @@ const About = () => {
             })}
           </div>
         </div>
-        <div className={AboutCSS.subtitle}>{data.about.subtitles.story}</div>
+        <div className={AboutCSS.storycontainer}>
+          <div>
+            <Image
+              src="/about_img.jpg"
+              alt="story"
+              height={405}
+              width={570}
+              quality={100}
+              className={AboutCSS.storyimage}
+            />
+          </div>
+          <div>
+            <div className={AboutCSS.subtitle}>
+              {data.about.subtitles.story}
+            </div>
+            <div className={AboutCSS.storydescription} />
+          </div>
+        </div>
         <div className={AboutCSS.subtitle}>{data.about.subtitles.team}</div>
       </div>
     </>
