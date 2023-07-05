@@ -5,11 +5,11 @@ const HomeImage = ({ imagetextCSS, imageCSS }) => {
     <div className={imageCSS}>
       <div className={imagetextCSS}>Care. Respect. Empowerment.</div>
       <Image
-        src="/home_img.jpg"
+        src="/home_img.png"
         alt="home"
-        width={720}
-        height={538}
+        fill={true}
         quality={100}
+        style={{ objectFit: "cover" }}
       />
     </div>
   );
