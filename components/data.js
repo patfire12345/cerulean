@@ -6,6 +6,7 @@ export const data = {
   home: {
     title: "CERULEAN ORGANIZATION",
     text: "Cerulean thrives to build a sustainable future for all children and young people. The organization works towards a world where every child is heard, treated with respect, and loved.",
+    imagetext: "Care. Respect. Empowerment.",
     button: "CONTACT",
     link: "/contact",
     image: "/home_img.png",
@@ -45,6 +46,25 @@ export const data = {
     bonfire: {
       title: "BONFIRE 2020",
     },
+  },
+  join: {
+    title: "Join Us",
+    image: "/join_img.jpg",
+    alt: "joinus",
+    description: {
+      start:
+        "If you are looking to make a difference and wish to work in a dynamic, youthful and professional environment, join our cause! You’ll get to: ",
+      middle: [
+        "Participate in a dynamic, multicultural, professional and fun environment",
+        "Enhance your knowledge and improve your social skills",
+        "Expand your network, connecting with fellows and professional seniors from all over the world",
+        "Have the opportunity to learn new languages for free at work",
+        "Receive a certificate once having completed 80% of work",
+        "Receive a recommendation letter written by Core Team",
+      ],
+      end: "The Cerulean family always welcomes you!",
+    },
+    button: "APPLY NOW",
   },
   contact: {
     infotext: "For more information, ",

@@ -15,6 +15,7 @@ export default function Home() {
         imagetextCSS={HomeCSS.imagetext}
         imageCSS={HomeCSS.image}
         image={data.home.image}
+        imagetext={data.home.imagetext}
         alt={data.home.alt}
       />
       <div>

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const HomeImage = ({ imagetextCSS, imageCSS, image, alt = "" }) => {
+const HomeImage = ({ imagetextCSS, imageCSS, image, imagetext, alt = "" }) => {
   return (
     <div className={imageCSS}>
-      <div className={imagetextCSS}>Care. Respect. Empowerment.</div>
+      <div className={imagetextCSS}>{imagetext}</div>
       <Image
         src={image}
         alt={alt}

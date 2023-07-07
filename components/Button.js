@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Button = ({ children, buttonLink, buttonCSS }) => {
+const Button = ({ children = "Button", buttonLink = "", buttonCSS }) => {
   return (
     <Link href={buttonLink} className={buttonCSS}>
       {children}
