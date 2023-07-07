@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-const HomeImage = ({ imagetextCSS, imageCSS }) => {
+const HomeImage = ({ imagetextCSS, imageCSS, image, alt = "" }) => {
   return (
     <div className={imageCSS}>
       <div className={imagetextCSS}>Care. Respect. Empowerment.</div>
       <Image
-        src="/home_img.png"
-        alt="home"
+        src={image}
+        alt={alt}
         fill={true}
         quality={100}
         style={{ objectFit: "cover" }}

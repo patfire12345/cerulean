@@ -8,6 +8,8 @@ export const data = {
     text: "Cerulean thrives to build a sustainable future for all children and young people. The organization works towards a world where every child is heard, treated with respect, and loved.",
     button: "CONTACT",
     link: "/contact",
+    image: "/home_img.png",
+    alt: "home",
   },
   about: {
     title: "About Us",

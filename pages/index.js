@@ -11,7 +11,12 @@ export default function Home() {
         <title>Cerulean | Home</title>
         <meta name="keywords" content="cerulean" />
       </Head>
-      <HomeImage imagetextCSS={HomeCSS.imagetext} imageCSS={HomeCSS.image} />
+      <HomeImage
+        imagetextCSS={HomeCSS.imagetext}
+        imageCSS={HomeCSS.image}
+        image={data.home.image}
+        alt={data.home.alt}
+      />
       <div>
         <div className={HomeCSS.title}>{data.home.title}</div>
         <div className={HomeCSS.text}>{data.home.text}</div>
