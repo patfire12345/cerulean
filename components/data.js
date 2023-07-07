@@ -44,4 +44,16 @@ export const data = {
       title: "BONFIRE 2020",
     },
   },
+  contact: {
+    infotext: "For more information, ",
+    socialtext:
+      "Please check out our social media, or feel free to send us an email!",
+    links: [
+      "https://www.linkedin.com/company/cerulean-organization/",
+      "mailto:cerulean.org@gmail.com",
+      "https://www.facebook.com/c3rulean.org?mibextid=ZbWKwL",
+      "https://instagram.com/cerulean_org?igshid=MzRlODBiNWFlZA==",
+    ],
+    icons: ["/linkedin.png", "/email.png", "/facebook.png", "/instagram.png"],
+  },
 };

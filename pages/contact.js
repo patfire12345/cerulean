@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import { data } from "../components/data";
+import ContactCSS from "../styles/Contact.module.css";
 
 const Contact = () => {
   return (
@@ -7,26 +11,18 @@ const Contact = () => {
         <title>Cerulean | Contact Us</title>
         <meta name="keywords" content="cerulean" />
       </Head>
-      <div>
-        <h1>Contact Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
+      <div className={ContactCSS.container}>
+        <div className={ContactCSS.infotext}>{data.contact.infotext}</div>
+        <div className={ContactCSS.socialtext}>{data.contact.socialtext}</div>
+        <div className={ContactCSS.iconcontainer}>
+          {data.contact.links.map((link, index) => {
+            return (
+              <Link href={link} className={ContactCSS.icon}>
+                <Image src={data.contact.icons[index]} width={29} height={29} />
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </>
   );
