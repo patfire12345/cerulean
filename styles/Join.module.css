@@ -1,0 +1,24 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 96px;
+    line-height: 110px;
+    letter-spacing: 0.05em;
+
+    padding: 30px;
+}
+
+.titlecontainer {
+    position: relative;
+    height: 323.25px;
+    width: 100vw;
+    background: #2C2B2BAD;
+    z-index: 3;
+}
+
+.image {
+    position: absolute;
+    top: 86.43px;
+    opacity: 0.68;
+}

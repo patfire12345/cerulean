@@ -1,4 +1,6 @@
 import Head from "next/head";
+import JoinCSS from "../styles/Join.module.css";
+import Image from "next/image";
 
 const Join = () => {
   return (
@@ -8,25 +10,18 @@ const Join = () => {
         <meta name="keywords" content="cerulean" />
       </Head>
       <div>
-        <h1>Join Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
-          laudantium animi laborum voluptatem quia, veniam fuga aperiam officia
-          sequi!
-        </p>
+        <div className={JoinCSS.titlecontainer}>
+          <div className={JoinCSS.title}>
+            Join Us
+            <Image
+              src="/join_img.jpg"
+              width={1375.5}
+              height={323.25}
+              quality={100}
+              className={JoinCSS.image}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
