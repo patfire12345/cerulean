@@ -42,9 +42,11 @@ export const data = {
     reverie: {
       title: "REVERIE 2022",
       text: "Inspired by Western classical art, Cerulean decided to bring the REVERIE project to life on August 10, 2022, at Thanh Tam Shelter with a desire to spread and share cultural diversity with the community while offering children an opportunity to discover their identities, pursue their passions, and simply find joy in each and every brushstroke. \n \n REVERIE is a Fauvism painting session and exhibition with all of its paintings beautifully crafted by talented young artists from the Thanh Tam Shelter who got to freely immerse themselves in marvelous French fairy tales while creating such masterpieces. Through the event, Cerulean was able to deliver meaningful values and bring volunteer work closer to the community as well as the children, thus connecting souls that share the same idea, creating a memorable day. \n \n Moreover, Cerulean and REVERIE have succeeded in providing the Shelter’s young artists a chance to learn more about themselves in which, eventually, we could all see and admire the artistic beauty of France through their little innocent and purely adorable strokes. As a result, we shall be able to take a break from the amount of stress and pressure that life has to offer while also being able to better listen and understand our inner selves more deeply. ",
+      image: "/reverie_img.png",
     },
     bonfire: {
       title: "BONFIRE 2020",
+      image: "/bonfire_img.png",
     },
   },
   join: {

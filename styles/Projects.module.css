@@ -70,10 +70,14 @@
 }
 
 .reverieportrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #6792BA;
     border-radius: 18px;
     width: 368px;
-    height: 502px;
+    height: 400px;
 }
 
 .bonfirecontainer {
@@ -86,6 +90,10 @@
 }
 
 .bonfireportrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     background-color: #6792BA;
     border-radius: 0 0 18px 0;
     width: 368px;

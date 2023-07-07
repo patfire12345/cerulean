@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ProjectsCSS from "../styles/Projects.module.css";
 import { data } from "../components/data";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -32,10 +33,30 @@ const Projects = () => {
               {data.projects.reverie.text}
             </div>
           </div>
-          <div className={ProjectsCSS.reverieportrait}></div>
+          <div className={ProjectsCSS.reverieportrait}>
+            <Image
+              src={data.projects.reverie.image}
+              width={292.5}
+              height={217.75}
+              quality={100}
+              style={{
+                borderRadius: "18px",
+              }}
+            />
+          </div>
         </div>
         <div className={ProjectsCSS.bonfirecontainer}>
-          <div className={ProjectsCSS.bonfireportrait}></div>
+          <div className={ProjectsCSS.bonfireportrait}>
+            <Image
+              src={data.projects.bonfire.image}
+              width={320}
+              height={480}
+              quality={100}
+              style={{
+                borderRadius: "0 0 18px 0",
+              }}
+            />
+          </div>
           <div className={ProjectsCSS.subtitle}>
             {data.projects.bonfire.title}
           </div>
