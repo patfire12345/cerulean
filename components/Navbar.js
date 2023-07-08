@@ -3,8 +3,11 @@ import Image from "next/image";
 import NavbarCSS from "../styles/Navbar.module.css";
 import { data } from "../components/data";
 import Button from "./Button";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
     <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>
@@ -31,7 +34,11 @@ const Navbar = () => {
             return (
               <Link
                 href={"/".concat(data.nav.links[index])}
-                className={NavbarCSS.link}
+                className={`${
+                  router.pathname === "/".concat(data.nav.links[index])
+                    ? NavbarCSS.activelink
+                    : NavbarCSS.link
+                }`}
               >
                 {title}
               </Link>

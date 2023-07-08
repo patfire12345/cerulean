@@ -34,6 +34,21 @@
   line-height: 16px;
   letter-spacing: 0.05em;
 }
+
+.activelink {
+    color: #6E9BC5;
+    text-decoration: none;
+  
+    margin: 0 15px;
+    display: inline-block;
+  
+    top: 50vh;
+  
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
 .logo {
   margin-left: 0;
   margin-right: auto;
