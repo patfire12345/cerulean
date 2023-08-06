@@ -4,7 +4,7 @@
     justify-content: center;
     font-size: 96px;
     line-height: 110px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 
     padding: 30px;
 }
@@ -15,7 +15,7 @@
     justify-content: center;
     font-size: 64px;
     line-height: 74px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 }
 
 .description {
@@ -26,7 +26,7 @@
     font-size: 20px;
     font-weight: 100;
     line-height: 23px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 
     width: 90vw;
     margin: 50px;
@@ -56,7 +56,7 @@
     justify-content: center;
     font-size: 32px;
     line-height: 37px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 }
 
 .valuedescription {
@@ -68,7 +68,7 @@
     font-weight: 100;
     font-size: 15px;
     line-height: 17.25px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
     
 }
 

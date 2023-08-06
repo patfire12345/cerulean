@@ -4,7 +4,7 @@
     justify-content: center;
     font-size: 96px;
     line-height: 110px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 
     padding: 30px;
 }
@@ -18,7 +18,7 @@
 .subtitle {
     font-size: 32px;
     line-height: 37px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 }
 
 .reveriecontainer {
@@ -50,7 +50,7 @@
 
     font-size: 32px;
     line-height: 37px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 
 }
 
@@ -62,7 +62,7 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 17px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 
     color: #6E9BC5;
 
