@@ -59,14 +59,14 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px #6E9BC5 solid;
+  border: #6E9BC5 solid;
+  border-width: 1px 3px 3px 1px;
   color: #6E9BC5;
   text-decoration: none;
-  font-family: Open Sans;
+  font-family: Helvetica;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.15em;
-  text-align: left;
 
   margin: 20px;
   width: 103px;
