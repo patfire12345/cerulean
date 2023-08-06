@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import NavbarCSS from "../styles/Navbar.module.css";
 import { data } from "../components/data";
-import Button from "./Button";
 import { useRouter } from "next/router";
+import BlueButton from "./BlueButton";
 
 const Navbar = () => {
   const router = useRouter();
@@ -23,12 +23,9 @@ const Navbar = () => {
         {data.nav.titles.map((title, index) => {
           if (data.nav.links[index] == "contact") {
             return (
-              <Button
-                buttonLink={"/".concat(data.nav.links[index])}
-                buttonCSS={NavbarCSS.button}
-              >
+              <BlueButton buttonLink={"/".concat(data.nav.links[index])}>
                 CONTACT
-              </Button>
+              </BlueButton>
             );
           } else {
             return (
