@@ -2,7 +2,7 @@ import Head from "next/head";
 import HomeImage from "../components/HomeImage";
 import HomeCSS from "../styles/Home.module.css";
 import { data } from "../components/data";
-import Button from "../components/Button";
+import WhiteButton from "../components/WhiteButton";
 
 export default function Home() {
   return (
@@ -11,22 +11,7 @@ export default function Home() {
         <title>Cerulean | Home</title>
         <meta name="keywords" content="cerulean" />
       </Head>
-      <HomeImage
-        imagetextCSS={HomeCSS.imagetext}
-        imageCSS={HomeCSS.image}
-        image={data.home.image}
-        imagetext={data.home.imagetext}
-        alt={data.home.alt}
-      />
-      <div>
-        <div className={HomeCSS.title}>{data.home.title}</div>
-        <div className={HomeCSS.text}>{data.home.text}</div>
-        <div className={HomeCSS.buttoncontainer}>
-          <Button buttonLink={data.home.link} buttonCSS={HomeCSS.button}>
-            {data.home.button}
-          </Button>
-        </div>
-      </div>
+      <HomeImage />
     </div>
   );
 }
