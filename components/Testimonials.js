@@ -11,7 +11,9 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
 
     if (seconds == 6) {
       setSeconds(0);
-      setTestimonialsCounter((testimonialsCounter + 1) % 7);
+      setTestimonialsCounter(
+        (testimonialsCounter + 1) % data.about.testimonialsText.length
+      );
       clearInterval(interval);
     } else {
       console.log(seconds);
@@ -36,7 +38,10 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
           width={12}
           height={22}
           onClick={() =>
-            setTestimonialsCounter((testimonialsCounter - 1 + 7) % 7)
+            setTestimonialsCounter(
+              (testimonialsCounter - 1 + data.about.testimonialsText.length) %
+                data.about.testimonialsText.length
+            )
           }
         />
         <div className={TestimonialsCSS.text}>

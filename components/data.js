@@ -19,7 +19,7 @@ export const data = {
     subtitles: {
       core: "WHAT WE STAND FOR",
       story: "HOW WE STARTED",
-      team: "TESTIMONIALS",
+      testimonials: "TESTIMONIALS",
     },
     ourCoreValues: [
       [
@@ -53,7 +53,7 @@ export const data = {
         "Huong Giang - PR Department",
       ],
       [
-        "It's true that 'the proof of the pudding is in the eating :)) I have learned a lot from everyone to develop myself day by day.",
+        "It's true that 'the proof of the pudding is in the eating' :)) I have learned a lot from everyone to develop myself day by day.",
         "Nguyen Ha - Human Resources Department",
       ],
       [
