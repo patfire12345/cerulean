@@ -96,3 +96,13 @@
     background-color: #6792BA;
     border-radius: 12px;
 }
+
+.testimonialscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    height: 700px;
+}
