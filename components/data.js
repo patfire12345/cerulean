@@ -17,7 +17,7 @@ export const data = {
     subtitles: {
       core: "WHAT WE STAND FOR",
       story: "HOW WE STARTED",
-      team: "Meet Our Team",
+      testimonials: "TESTIMONIALS",
     },
     ourCoreValues: [
       [
@@ -31,6 +31,40 @@ export const data = {
       [
         "EMPOWERMENT",
         "We value each other's abilities, goals and learning. We encourage and support all to exhibit a sense of independence and freedom.",
+      ],
+    ],
+    testimonialsText: [
+      [
+        "I came for Project 1, \n I stayed for Cerulean.",
+        "Vy Vy - Content Board",
+      ],
+      [
+        "I have been fortunate to meet friends across the country who share the same fascination for culture, education, and language.",
+        "Hong Hanh - Content Board",
+      ],
+      [
+        "Cerulean is like a whole big family where we all learn while having fun!",
+        "Nhi - External Relations Department",
+      ],
+      [
+        "When I entered Cerulean, I was just a blank page [...] but everyone was very enthusiastic to support me.",
+        "Huong Giang - PR Department",
+      ],
+      [
+        "It's true that 'the proof of the pudding is in the eating' :)) I have learned a lot from everyone to develop myself day by day.",
+        "Nguyen Ha - Human Resources Department",
+      ],
+      [
+        "Cerulean’s work environment is super duper awesome!",
+        "Ngoc Kieu - External Relations Department",
+      ],
+      [
+        "The members always work hard for each other's sake and [...] to help the project become more and more successful.",
+        "Linh - Human Resources Department",
+      ],
+      [
+        "Cerulean not only brings good benefits to children but also crafts [...] many opportunities for youths.",
+        "Phong Luu - Design",
       ],
     ],
   },

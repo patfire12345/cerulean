@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { data } from "../components/data.js";
 import AboutCSS from "../styles/About.module.css";
+import Testimonials from "../components/Testimonials.js";
+import TestimonialsProgress from "../components/TestimonialsProgress.js";
 
 const About = () => {
+  const [testimonialsCounter, setTestimonialsCounter] = useState(0);
   return (
     <>
       <Head>
@@ -44,7 +48,19 @@ const About = () => {
             <div className={AboutCSS.storydescription} />
           </div>
         </div>
-        <div className={AboutCSS.subtitle}>{data.about.subtitles.team}</div>
+        <div className={AboutCSS.testimonialscontainer}>
+          <div className={AboutCSS.subtitle}>
+            {data.about.subtitles.testimonials}
+          </div>
+          <Testimonials
+            testimonialsCounter={testimonialsCounter}
+            setTestimonialsCounter={setTestimonialsCounter}
+          />
+          <TestimonialsProgress
+            testimonialList={data.about.testimonialsText}
+            activeIndex={testimonialsCounter}
+          />
+        </div>
       </div>
     </>
   );
