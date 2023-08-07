@@ -11,7 +11,7 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
 
     if (seconds == 6) {
       setSeconds(0);
-      setTestimonialsCounter(testimonialsCounter + 1);
+      setTestimonialsCounter((testimonialsCounter + 1) % 7);
       clearInterval(interval);
     } else {
       console.log(seconds);
