@@ -19,7 +19,7 @@ export const data = {
     subtitles: {
       core: "WHAT WE STAND FOR",
       story: "HOW WE STARTED",
-      team: "Meet Our Team",
+      team: "TESTIMONIALS",
     },
     ourCoreValues: [
       [
@@ -53,11 +53,11 @@ export const data = {
         "Huong Giang - PR Department",
       ],
       [
-        "It's true that 'the proof of the pudding is in the eating; :)) I have learned a lot from everyone to develop myself day by day.",
+        "It's true that 'the proof of the pudding is in the eating :)) I have learned a lot from everyone to develop myself day by day.",
         "Nguyen Ha - Human Resources Department",
       ],
       [
-        "Cerulean’s work environment is super duper awesome!,",
+        "Cerulean’s work environment is super duper awesome!",
         "Ngoc Kieu - External Relations Department",
       ],
       [
