@@ -4,11 +4,9 @@ export const data = {
     links: ["", "about", "projects", "join", "contact"],
   },
   home: {
-    title: "CERULEAN ORGANIZATION",
     text: "Cerulean thrives to build a sustainable future for all children and young people. The organization works towards a world where every child is heard, treated with respect, and loved.",
-    imagetext: "Care. Respect. Empowerment.",
-    button: "CONTACT",
-    link: "/contact",
+    imagetext: "CARE. \nRESPECT. \nEMPOWERMENT.",
+    button: "JOIN OUR NEWSLETTER!",
     image: "/home_img.png",
     alt: "home",
   },
