@@ -9,7 +9,7 @@
   font-family: Helvetica;
   font-size: 14px;
   line-height: 16.1px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
 }
 .linkcontainer {
   display: flex;
@@ -32,7 +32,7 @@
 
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
 }
 
 .activelink {
@@ -46,7 +46,7 @@
   
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.15em;
 }
 
 .logo {
