@@ -16,6 +16,8 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
     opacity: 0,
   };
 
+  const data = dataEN;
+
   useEffect(() => {
     let interval = null;
 
