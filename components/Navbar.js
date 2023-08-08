@@ -18,6 +18,7 @@ const Navbar = () => {
           height={63}
           quality={100}
         />
+        <div className={NavbarCSS.logotext}> CERULEAN ORGANIZATION </div>
       </div>
       <div className={NavbarCSS.linkcontainer}>
         {data.nav.titles.map((title, index) => {
