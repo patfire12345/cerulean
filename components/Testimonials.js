@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import TestimonialsCSS from "../styles/Testimonials.module.css";
-import { data } from "./data";
+import { dataEN } from "../data/dataEN";
 import { motion } from "framer-motion";
 
 const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {

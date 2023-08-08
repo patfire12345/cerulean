@@ -1,7 +1,7 @@
 import Head from "next/head";
 import HomeImage from "../components/HomeImage";
 import HomeCSS from "../styles/Home.module.css";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
 import WhiteButton from "../components/WhiteButton";
 
 export default function Home() {
