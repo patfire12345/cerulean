@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { dataEN } from "../data/dataEN.js";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import AboutCSS from "../styles/About.module.css";
 import Testimonials from "../components/Testimonials.js";
 import TestimonialsProgress from "../components/TestimonialsProgress.js";
 
-const About = () => {
+const About = ({ EN }) => {
   const [testimonialsCounter, setTestimonialsCounter] = useState(0);
-  const data = dataEN;
+  const data = EN ? dataEN : dataVN;
   return (
     <>
       <Head>

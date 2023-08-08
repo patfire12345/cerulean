@@ -1,13 +1,20 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavbarCSS from "../styles/Navbar.module.css";
 import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import { useRouter } from "next/router";
 import BlueButton from "./BlueButton";
 
-const Navbar = () => {
+const Navbar = ({ EN, setEN }) => {
   const router = useRouter();
-  const data = dataEN;
+  const [data, setData] = useState(EN ? dataEN : dataVN);
+
+  useEffect(() => {
+    setData(EN ? dataEN : dataVN);
+  }, [EN]);
+
   return (
     <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>
@@ -24,7 +31,7 @@ const Navbar = () => {
           if (data.nav.links[index] == "contact") {
             return (
               <BlueButton buttonLink={"/".concat(data.nav.links[index])}>
-                CONTACT
+                {title}
               </BlueButton>
             );
           } else {
@@ -43,6 +50,13 @@ const Navbar = () => {
           }
         })}
       </div>
+      <button
+        onClick={() => {
+          setEN(!EN);
+        }}
+      >
+        Change Language
+      </button>
     </div>
   );
 };
