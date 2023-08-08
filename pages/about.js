@@ -42,7 +42,7 @@ const About = () => {
             />
           </div>
           <div>
-            <div className={AboutCSS.subtitle}>
+            <div className={AboutCSS.storysubtitle}>
               {data.about.subtitles.story}
             </div>
             <div className={AboutCSS.storydescription} />

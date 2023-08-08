@@ -18,6 +18,17 @@
     letter-spacing: 0.15em;
 }
 
+.storysubtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.15em;
+
+    color: #6E9BC5;
+}
+
 .description {
     display: flex;
     align-items: center;
