@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
 import ContactCSS from "../styles/Contact.module.css";
 
 const Contact = () => {
+  const data = dataEN;
   return (
     <>
       <Head>

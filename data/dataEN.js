@@ -1,4 +1,4 @@
-export const data = {
+export const dataEN = {
   nav: {
     titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT"],
     links: ["", "about", "projects", "join", "contact"],
@@ -13,7 +13,7 @@ export const data = {
   about: {
     title: "WHO WE ARE",
     aboutUs:
-      "Cerulean non-profit organization was initially founded in 2020 to unite the French, English and Vietnamese cultures. To date, Cerulean has successfully connected more than 300 participants to English and French volunteer tutors from Vietnam and abroad. Noticing how impactful education is on the future generation, Cerulean strongly believes that providing quality education for all is fundamental to creating a peaceful and prosperous world. The organization's new mission is to support all children across Vietnam to access a quality and inclusive education. Cerulean will be working to provide quality learning opportunities that prepare Vietnamese children with the knowledge and skill they need to acquire a healthier and better life. \n \n Cerulean Organization",
+      "Cerulean non-profit organization was initially founded in 2020 to unite the French, English and Vietnamese cultures. To date, Cerulean has successfully connected more than 300 participants to English and French volunteer tutors from Vietnam and abroad. \n \n Noticing how impactful education is on the future generation, Cerulean strongly believes that providing quality education for all is fundamental to creating a peaceful and prosperous world. The organization's new mission is to support all children across Vietnam to access a quality and inclusive education. \n \n Cerulean will be working to provide quality learning opportunities that prepare Vietnamese children with the knowledge and skill they need to acquire a healthier and better life.",
     subtitles: {
       core: "WHAT WE STAND FOR",
       story: "HOW WE STARTED",
@@ -35,7 +35,7 @@ export const data = {
     ],
     testimonialsText: [
       [
-        "I came for Project 1, \n I stayed for Cerulean.",
+        "I came for Project 1,\nI stayed for Cerulean.",
         "Vy Vy - Content Board",
       ],
       [
@@ -51,7 +51,7 @@ export const data = {
         "Huong Giang - PR Department",
       ],
       [
-        "It's true that 'the proof of the pudding is in the eating' :)) I have learned a lot from everyone to develop myself day by day.",
+        "It's true that 'the proof of the pudding is in the eating'. I have learned a lot from everyone to develop myself day by day.",
         "Nguyen Ha - Human Resources Department",
       ],
       [

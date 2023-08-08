@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavbarCSS from "../styles/Navbar.module.css";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
 import { useRouter } from "next/router";
 import BlueButton from "./BlueButton";
 
 const Navbar = () => {
   const router = useRouter();
-
+  const data = dataEN;
   return (
     <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>

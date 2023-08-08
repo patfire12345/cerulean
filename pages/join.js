@@ -1,10 +1,11 @@
 import Head from "next/head";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
 import JoinCSS from "../styles/Join.module.css";
 import HomeImage from "../components/HomeImage";
 import Button from "../components/Button";
 
 const Join = () => {
+  const data = dataEN;
   return (
     <>
       <Head>

@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { data } from "../components/data.js";
+import { dataEN } from "../data/dataEN.js";
 import AboutCSS from "../styles/About.module.css";
 import Testimonials from "../components/Testimonials.js";
 import TestimonialsProgress from "../components/TestimonialsProgress.js";
 
 const About = () => {
   const [testimonialsCounter, setTestimonialsCounter] = useState(0);
+  const data = dataEN;
   return (
     <>
       <Head>

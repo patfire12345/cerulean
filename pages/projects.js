@@ -1,9 +1,10 @@
 import Head from "next/head";
 import ProjectsCSS from "../styles/Projects.module.css";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
 import Image from "next/image";
 
 const Projects = () => {
+  const data = dataEN;
   return (
     <>
       <Head>
