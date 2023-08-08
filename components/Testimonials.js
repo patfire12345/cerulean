@@ -53,7 +53,6 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
           width={12}
           height={22}
           onClick={() => {
-            setVisible(false);
             setTestimonialsCounter(
               (testimonialsCounter - 1 + data.about.testimonialsText.length) %
                 data.about.testimonialsText.length
@@ -73,12 +72,11 @@ const Testimonials = ({ testimonialsCounter = 0, setTestimonialsCounter }) => {
           src="/right_icon.png"
           width={12}
           height={22}
-          onClick={() => {
-            setVisible(false);
+          onClick={() =>
             setTestimonialsCounter(
               (testimonialsCounter + 1) % data.about.testimonialsText.length
-            );
-          }}
+            )
+          }
         />
       </div>
     </div>
