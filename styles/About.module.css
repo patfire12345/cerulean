@@ -6,7 +6,7 @@
     line-height: 110px;
     letter-spacing: 0.15em;
 
-    padding: 30px;
+    padding-top: 9vw;
 }
 
 .subtitle {
@@ -22,9 +22,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 15vw;
+
     font-size: 64px;
     line-height: 74px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
 
     color: #6E9BC5;
 }
@@ -39,12 +41,25 @@
     line-height: 23px;
     letter-spacing: 0.15em;
 
-    width: 90vw;
-    margin: 50px;
+    width: 65vw;
+    height: 20vw;
+    margin-right: 17vw;
+    margin-left: 17vw;
+    position: relative;
+    padding-bottom: 9vw;
 
-    color: #FFFFFFD9;
+    color: #FFFFFF;
 
     white-space: pre-wrap;
+}
+
+.aboutbackground {
+    z-index: -1;
+    object-fit: "cover";
+}
+
+.valuebox {
+    padding: 6vw 0;
 }
 
 .valuecontainer {
@@ -52,13 +67,14 @@
     align-items: center;
     justify-content: center;
 
-    margin: 20px 0;
+    height: 10vw;
+    padding-top: 3vw;
 }
 
 .valuegrid {
     display: grid;
     grid-template-columns: 250px 250px 250px;
-    gap: 10px 150px;
+    gap: 10px 12vw;
 }
 
 .value {
@@ -80,7 +96,6 @@
     font-size: 15px;
     line-height: 17.25px;
     letter-spacing: 0.15em;
-    
 }
 
 .storycontainer {
@@ -90,23 +105,47 @@
     text-align: center;
     background-color: #FFFFFF;
 
-    padding: 100px 0;
+    padding: 5vw 0;
 }
 
 .storyimage {
+
+    left: 4vw;
+
+    margin: 0 50px;
     position: relative;
+}
 
-    left: -20px;
+.storysticker1 {
+    left: 5px;
+    top: -190px;
+    
+    position: relative;
+}
 
-    border-radius: 18px;
-    margin-right: 50px;
+.storysticker2 {
+    left: -354px;
+    top: 195px;
+    
+    position: relative;
 }
 
 .storydescription {
-    height: 350px;
-    width: 500px;
-    background-color: #FFFFFF;
-    border-radius: 12px;
+    height: 150px;
+    width: 1000px;
+    margin: 0 7vw;
+    padding-top: 1vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+
+    color: #6792BA;
 }
 
 .testimonialscontainer {
@@ -116,5 +155,5 @@
 
     flex-direction: column;
 
-    height: 700px;
+    height: 50vw;
 }
