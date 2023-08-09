@@ -1,6 +1,6 @@
 export const dataVN = {
   nav: {
-    titles: ["TRANG TRỦ", "GIỚI THIỆU", "DỰ ÁN", "TUYỂN DỤNG", "LIÊN HỆ"],
+    titles: ["TRANG CHỦ", "GIỚI THIỆU", "DỰ ÁN", "TUYỂN DỤNG", "LIÊN HỆ"],
     links: ["", "about", "projects", "join", "contact"],
   },
   home: {
