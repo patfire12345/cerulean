@@ -38,7 +38,6 @@ const Testimonials = ({
         clearInterval(interval);
       }, 500);
     } else {
-      console.log(seconds);
       interval = setInterval(() => {
         setSeconds((seconds) => seconds + 1);
       }, 1000);

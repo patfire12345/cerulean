@@ -18,13 +18,15 @@ const Navbar = ({ EN, setEN }) => {
   return (
     <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>
-        <Image
-          src="/logo.png"
-          alt="site logo"
-          width={63}
-          height={63}
-          quality={100}
-        />
+        <Link href={"/".concat(data.nav.links[0])}>
+          <Image
+            src="/logo.png"
+            alt="site logo"
+            width={63}
+            height={63}
+            quality={100}
+          />
+        </Link>
       </div>
       <div className={NavbarCSS.linkcontainer}>
         {data.nav.titles.map((title, index) => {
@@ -50,13 +52,26 @@ const Navbar = ({ EN, setEN }) => {
           }
         })}
       </div>
-      <button
-        onClick={() => {
-          setEN(!EN);
-        }}
-      >
-        Change Language
-      </button>
+      <div className={NavbarCSS.languagecontainer}>
+        <div
+          className={NavbarCSS.languagebutton}
+          onClick={() => {
+            setEN(!EN);
+          }}
+        >
+          <Image src={"/english.png"} width={16} height={8} />
+          <div style={{ color: "black", paddingLeft: "5px" }}>EN</div>
+        </div>
+        <div
+          className={NavbarCSS.languagebutton}
+          onClick={() => {
+            setEN(!EN);
+          }}
+        >
+          <Image src={"/vietnamese.png"} width={16} height={8} />
+          <div style={{ color: "black", paddingLeft: "5px" }}>VN</div>
+        </div>
+      </div>
     </div>
   );
 };
