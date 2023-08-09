@@ -1,13 +1,13 @@
 export const dataVN = {
   nav: {
-    titles: ["TRANG TRỦ", "GIỚI THIỆU", "DỰ ÁN", "TUYỂN DỤNG", "LIÊN HỆ"],
-    links: ["", "trangtru", "duan", "tuyendung", "lienhe"],
+    titles: ["TRANG CHỦ", "GIỚI THIỆU", "DỰ ÁN", "TUYỂN DỤNG", "LIÊN HỆ"],
+    links: ["", "about", "projects", "join", "contact"],
   },
   home: {
     text: "Tổ chức Cerulean hướng tới xây dựng một tương lai bền vững cho tất cả trẻ em và thanh thiếu niên. Tổ chức hoạt động vì một thế giới nơi mỗi đứa trẻ được lắng nghe, được đối xử với sự tôn trọng và được yêu thương.",
     imagetext: "CARE. \nRESPECT. \nEMPOWERMENT.",
     button: "NHẬN BẢN TIN NGAY!",
-    image: "/trangtru_img.png",
+    image: "/home_img.png",
     alt: "trangtru",
   },
   about: {

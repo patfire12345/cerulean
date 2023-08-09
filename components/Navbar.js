@@ -1,30 +1,39 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavbarCSS from "../styles/Navbar.module.css";
 import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import { useRouter } from "next/router";
 import BlueButton from "./BlueButton";
 
-const Navbar = () => {
+const Navbar = ({ EN, setEN }) => {
   const router = useRouter();
-  const data = dataEN;
+  const [data, setData] = useState(EN ? dataEN : dataVN);
+
+  useEffect(() => {
+    setData(EN ? dataEN : dataVN);
+  }, [EN]);
+
   return (
     <div className={NavbarCSS.navbar}>
       <div className={NavbarCSS.logo}>
-        <Image
-          src="/logo.png"
-          alt="site logo"
-          width={63}
-          height={63}
-          quality={100}
-        />
+        <Link href={"/".concat(data.nav.links[0])}>
+          <Image
+            src="/logo.png"
+            alt="site logo"
+            width={63}
+            height={63}
+            quality={100}
+          />
+        </Link>
       </div>
       <div className={NavbarCSS.linkcontainer}>
         {data.nav.titles.map((title, index) => {
           if (data.nav.links[index] == "contact") {
             return (
               <BlueButton buttonLink={"/".concat(data.nav.links[index])}>
-                CONTACT
+                {title}
               </BlueButton>
             );
           } else {
@@ -42,6 +51,26 @@ const Navbar = () => {
             );
           }
         })}
+      </div>
+      <div className={NavbarCSS.languagecontainer}>
+        <div
+          className={NavbarCSS.languagebutton}
+          onClick={() => {
+            setEN(!EN);
+          }}
+        >
+          <Image src={"/english.png"} width={16} height={8} />
+          <div style={{ color: "black", paddingLeft: "5px" }}>EN</div>
+        </div>
+        <div
+          className={NavbarCSS.languagebutton}
+          onClick={() => {
+            setEN(!EN);
+          }}
+        >
+          <Image src={"/vietnamese.png"} width={16} height={8} />
+          <div style={{ color: "black", paddingLeft: "5px" }}>VN</div>
+        </div>
       </div>
     </div>
   );

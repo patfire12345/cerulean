@@ -1,10 +1,11 @@
 import Head from "next/head";
 import ProjectsCSS from "../styles/Projects.module.css";
 import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import Image from "next/image";
 
-const Projects = () => {
-  const data = dataEN;
+const Projects = ({ EN }) => {
+  const data = EN ? dataEN : dataVN;
   return (
     <>
       <Head>
