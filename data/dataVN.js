@@ -115,4 +115,14 @@ export const dataVN = {
     ],
     icons: ["/linkedin.png", "/email.png", "/facebook.png", "/instagram.png"],
   },
+  footer: {
+    titles: ["TRANG CHỦ", "GIỚI THIỆU", "DỰ ÁN", "TUYỂN DỤNG", "LIÊN HỆ"],
+    links: ["", "about", "projects", "join", "contact"],
+    icons: [
+      "/linkedin_lg.png",
+      "/email_lg.png",
+      "/facebook_lg.png",
+      "/instagram_lg.png",
+    ],
+  },
 };

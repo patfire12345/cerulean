@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   const [EN, setEN] = useState(true);
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
       {React.cloneElement(children, {
         EN: EN,
       })}
+      <Footer />
     </div>
   );
 };
