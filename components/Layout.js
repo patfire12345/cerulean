@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       {React.cloneElement(children, {
         EN: EN,
       })}
-      <Footer />
+      <Footer EN={EN} />
     </div>
   );
 };

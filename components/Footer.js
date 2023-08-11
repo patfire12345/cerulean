@@ -5,9 +5,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
-  const router = useRouter();
-  const data = dataEN;
+const Footer = ({ EN }) => {
+  const data = EN ? dataEN : dataVN;
   return (
     <div className={FooterCSS.container}>
       <div className={FooterCSS.topfootercontainer}>
