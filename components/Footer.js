@@ -11,7 +11,7 @@ const Footer = ({ EN }) => {
     <div className={FooterCSS.container}>
       <div className={FooterCSS.topfootercontainer}>
         <div className={FooterCSS.explorecontainer}>
-          <div className={FooterCSS.footertitle}>EXPLORE</div>
+          <div className={FooterCSS.footertitle}>{data.footer.explore[0]}</div>
           <div className={FooterCSS.exploreitemscontainer}>
             {data.footer.titles.map((title, index) => {
               if (data.footer.links[index] != "contact") {
@@ -28,23 +28,25 @@ const Footer = ({ EN }) => {
           </div>
         </div>
         <div className={FooterCSS.portalcontainer}>
-          <div className={FooterCSS.footertitle}>PORTAL</div>
+          <div className={FooterCSS.footertitle}>{data.footer.portal[0]}</div>
           <Link href="/" className={FooterCSS.portalitem}>
-            LOGIN
+            {data.footer.portal[1]}
           </Link>
         </div>
         <div className={FooterCSS.newslettercontainer}>
-          <div className={FooterCSS.footertitle}>NEWSLETTER</div>
+          <div className={FooterCSS.footertitle}>
+            {data.footer.newsletter[0]}
+          </div>
           <div className={FooterCSS.newsletteritem}>
-            Want to know what we’re up to? Sign up for our email list here!
+            {data.footer.newsletter[1]}
           </div>
           <div className={FooterCSS.newsletteritem}>Coming soon!</div>
         </div>
       </div>
       <div className={FooterCSS.middlefootercontainer}>
-        <div className={FooterCSS.footertitle}>LET'S KEEP IN TOUCH!</div>
+        <div className={FooterCSS.footertitle}>{data.footer.contact[0]}</div>
         <Link href="/contact" className={FooterCSS.contactitem}>
-          CONTACT
+          {data.footer.contact[1]}
         </Link>
       </div>
       <div className={FooterCSS.bottomfootercontainer}>
@@ -64,7 +66,7 @@ const Footer = ({ EN }) => {
           })}
         </div>
         <div className={FooterCSS.copyrighttext}>
-          COPYRIGHT © Cerulean Organization NPO 2023. ALL RIGHTS RESERVED
+          {data.footer.copyright[0]}
         </div>
       </div>
     </div>
