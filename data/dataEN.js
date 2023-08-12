@@ -110,6 +110,31 @@ export const dataEN = {
       "https://www.facebook.com/c3rulean.org?mibextid=ZbWKwL",
       "https://instagram.com/cerulean_org?igshid=MzRlODBiNWFlZA==",
     ],
-    icons: ["/linkedin.png", "/email.png", "/facebook.png", "/instagram.png"],
+    icons: [
+      "/linkedin_sm.png",
+      "/email_sm.png",
+      "/facebook_sm.png",
+      "/instagram_sm.png",
+    ],
+  },
+  footer: {
+    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT"],
+    links: ["", "about", "projects", "join", "contact"],
+    icons: [
+      "/linkedin_lg.png",
+      "/email_lg.png",
+      "/facebook_lg.png",
+      "/instagram_lg.png",
+    ],
+    explore: ["EXPLORE"],
+    portal: ["PORTAL", "LOGIN"],
+    newsletter: [
+      "NEWSLETTER",
+      "Want to know what we’re up to? Sign up for our email list here!",
+    ],
+    contact: ["LET'S KEEP IN TOUCH!", "CONTACT"],
+    copyright: [
+      "COPYRIGHT © Cerulean Organization NPO 2023. ALL RIGHTS RESERVED",
+    ],
   },
 };
