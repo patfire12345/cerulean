@@ -9,7 +9,7 @@ const Footer = ({ EN }) => {
   const data = EN ? dataEN : dataVN;
   return (
     <div className={FooterCSS.container}>
-      <div className={FooterCSS.topfootercontainer}>
+      <div className={FooterCSS.footercontainer}>
         <div className={FooterCSS.explorecontainer}>
           <div className={FooterCSS.footertitle}>{data.footer.explore[0]}</div>
           <div className={FooterCSS.exploreitemscontainer}>
@@ -40,16 +40,20 @@ const Footer = ({ EN }) => {
           <div className={FooterCSS.newsletteritem}>
             {data.footer.newsletter[1]}
           </div>
-          <div className={FooterCSS.newsletteritem}>Coming soon!</div>
+          <div className={FooterCSS.newsletterform}>
+            <input
+              className={FooterCSS.newsletterinput}
+              placeholder="Email address"
+            />
+            <div className={FooterCSS.newsletterbutton}>Subscribe</div>
+          </div>
         </div>
-      </div>
-      <div className={FooterCSS.middlefootercontainer}>
-        <div className={FooterCSS.footertitle}>{data.footer.contact[0]}</div>
-        <Link href="/contact" className={FooterCSS.contactitem}>
-          {data.footer.contact[1]}
-        </Link>
-      </div>
-      <div className={FooterCSS.bottomfootercontainer}>
+        <div className={FooterCSS.contactcontainer}>
+          <div className={FooterCSS.footertitle}>{data.footer.contact[0]}</div>
+          <Link href="/contact" className={FooterCSS.contactitem}>
+            {data.footer.contact[1]}
+          </Link>
+        </div>
         <div className={FooterCSS.iconscontainer}>
           {data.contact.links.map((link, index) => {
             return (
