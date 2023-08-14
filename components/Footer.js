@@ -1,14 +1,20 @@
+import { useEffect } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import FooterCSS from "../styles/Footer.module.css";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
 const Footer = ({ EN }) => {
   const { data: session } = useSession();
   const data = EN ? dataEN : dataVN;
+
+  useEffect(() => {
+    if (session && session.user.email !== process.env.VERIFIED_EMAIL) {
+      signOut();
+    }
+  }, [session]);
 
   if (session) {
     return (
