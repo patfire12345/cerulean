@@ -125,7 +125,7 @@ export const dataVN = {
       "/instagram_lg.png",
     ],
     explore: ["EXPLORE"],
-    portal: ["PORTAL", "LOGIN"],
+    portal: ["PORTAL", "LOGIN", "LOGOUT"],
     newsletter: [
       "NEWSLETTER",
       "Want to know what we’re up to? Sign up for our email list here!",
