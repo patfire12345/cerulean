@@ -1,16 +1,21 @@
 .navbar {
   padding: 10px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
 
-  background: #ffffff;
+  background: transparent;
   font-family: Helvetica;
   font-size: 14px;
   line-height: 16.1px;
   letter-spacing: 0.15em;
+
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
+
 .linkcontainer {
   display: flex;
   align-items: center;
@@ -22,7 +27,7 @@
 }
 
 .link {
-  color: #333;
+  color: #FFF9F3;
   text-decoration: none;
 
   margin: 0 15px;
@@ -30,7 +35,9 @@
 
   top: 50vh;
 
+  font-family: Helvetica;
   font-size: 14px;
+  font-weight: 300;
   line-height: 16px;
   letter-spacing: 0.15em;
 }
@@ -90,5 +97,27 @@
   cursor: pointer;
 
   margin: 0 7px;
+}
+
+.languagebutton {
+  color: #FFF9F3;
+  padding-left: 5px;
+
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+}
+
+.languagebuttonactive {
+  color: #6E9BC5;
+  padding-left: 5px;
+
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.15em;
 }
 
