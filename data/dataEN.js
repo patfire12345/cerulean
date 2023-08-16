@@ -1,7 +1,7 @@
 export const dataEN = {
   nav: {
-    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT"],
-    links: ["", "about", "projects", "join", "contact"],
+    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT", "SETTINGS"],
+    links: ["", "about", "projects", "join", "contact", "settings"],
   },
   home: {
     text: "Cerulean thrives to build a sustainable future for all children and young people. The organization works towards a world where every child is heard, treated with respect, and loved.",
