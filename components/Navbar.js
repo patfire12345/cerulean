@@ -6,8 +6,10 @@ import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import { useRouter } from "next/router";
 import BlueButton from "./BlueButton";
+import { useSession } from "next-auth/react";
 
 const Navbar = ({ EN, setEN }) => {
+  const { data: session } = useSession();
   const router = useRouter();
   const [data, setData] = useState(EN ? dataEN : dataVN);
 
@@ -36,7 +38,7 @@ const Navbar = ({ EN, setEN }) => {
                 {title}
               </BlueButton>
             );
-          } else {
+          } else if (session || !(data.nav.links[index] == "settings")) {
             return (
               <Link
                 href={"/".concat(data.nav.links[index])}
