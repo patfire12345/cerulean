@@ -3,6 +3,7 @@ import WhiteButton from "../components/WhiteButton";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import HomeImageCSS from "../styles/HomeImage.module.css";
+import SubscribePopup from "./SubscribePopup";
 
 const HomeImage = ({ EN }) => {
   const data = EN ? dataEN : dataVN;
@@ -12,7 +13,11 @@ const HomeImage = ({ EN }) => {
         <div className={HomeImageCSS.imagetext}>{data.home.imagetext}</div>
         <div className={HomeImageCSS.destext}>{data.home.text}</div>
         <div className={HomeImageCSS.button}>
-          <WhiteButton>{data.home.button}</WhiteButton>
+          <SubscribePopup>
+            <div className={HomeImageCSS.newsletterbutton}>
+              {data.home.button}
+            </div>
+          </SubscribePopup>
         </div>
       </div>
       <Image
