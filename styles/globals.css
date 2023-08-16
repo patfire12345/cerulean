@@ -9,6 +9,9 @@ body {
 
   overflow-x: hidden;
 }
+input {
+  outline: none;
+}
 footer {
   display: block;
   text-align: center;
