@@ -8,4 +8,9 @@ export default NextAuth({
       clientSecret: process.env.REACT_APP_CLIENT_SECRET,
     }),
   ],
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      return baseUrl;
+    },
+  },
 });

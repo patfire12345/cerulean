@@ -44,8 +44,6 @@ const Footer = ({ EN }) => {
             <div className={FooterCSS.portalitem} onClick={() => signOut()}>
               {data.footer.portal[2]}
             </div>
-            <div>Hello, {session.user.name}</div>
-            <div>Your name is {session.user.email}</div>
           </div>
           <div className={FooterCSS.newslettercontainer}>
             <div className={FooterCSS.footertitle}>
