@@ -6,6 +6,7 @@ import { dataVN } from "../data/dataVN";
 import Link from "next/link";
 import Image from "next/image";
 import ConfirmPopup from "./ConfirmPopup";
+import ExclamationPopup from "./ExclamationPopup";
 
 const Footer = ({ EN }) => {
   const { data: session } = useSession();

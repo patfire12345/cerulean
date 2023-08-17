@@ -1,5 +1,6 @@
 import Popup from "reactjs-popup";
 import ConfirmPopup from "./ConfirmPopup";
+import ExclamationPopup from "./ExclamationPopup";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import PopupCSS from "../styles/SubscribePopup.module.css";
