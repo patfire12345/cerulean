@@ -27,11 +27,7 @@ export default function RejectPopup({ children, EN }) {
                   width={39}
                   height={39}
                   src="/reject.png"
-                  style={{
-                    position: "relative",
-                    right: "19.5px",
-                    top: "19.5px",
-                  }}
+                  className={PopupCSS.image}
                 />
               </div>
               <div className={PopupCSS.modaltitle}>Oops...</div>

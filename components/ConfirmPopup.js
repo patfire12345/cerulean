@@ -27,11 +27,7 @@ export default function ConfirmPopup({ children, EN }) {
                   width={39}
                   height={39}
                   src="/checkmark.png"
-                  style={{
-                    position: "relative",
-                    right: "19.5px",
-                    top: "19.5px",
-                  }}
+                  className={PopupCSS.image}
                 />
               </div>
               <div className={PopupCSS.modaltitle}>Thank you!</div>

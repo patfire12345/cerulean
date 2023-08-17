@@ -78,6 +78,12 @@
     left: 15px;
 }
 
+.image {
+    position: relative;
+    right: 19.5px;
+    top: 19.5px;
+}
+
 .button {
     display: flex;
     align-items: center;
