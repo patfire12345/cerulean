@@ -1,8 +1,11 @@
 import Popup from "reactjs-popup";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import PopupCSS from "../styles/SubscribePopup.module.css";
 import Image from "next/image";
 
-export default function SubscribePopup({ children }) {
+export default function SubscribePopup({ children, EN }) {
+  const data = EN ? dataEN : dataVN;
   return (
     <div>
       <Popup trigger={() => children} modal>
@@ -18,22 +21,21 @@ export default function SubscribePopup({ children }) {
                 height={17}
                 className={PopupCSS.X}
               />
-              <div className={PopupCSS.modaltitle}>
-                STAY UP TO DATE WITH OUR WORK!
-              </div>
-              <div className={PopupCSS.modaltext}>
-                Want to know what we're up to? Sign up for our email list here!
-              </div>
+              <div className={PopupCSS.modaltitle}>{data.subscribe.title}</div>
+              <div className={PopupCSS.modaltext}>{data.subscribe.text}</div>
               <div className={PopupCSS.subscribecontainer}>
                 <input
-                  placeholder="Email address"
+                  placeholder={data.subscribe.placeholder}
                   className={PopupCSS.modalinput}
                 />
                 <div
                   className={PopupCSS.button}
-                  onClick={() => console.log("Subscribed to newsletter!")}
+                  onClick={() => {
+                    console.log("Subscribed to newsletter!");
+                    close();
+                  }}
                 >
-                  Subscribe
+                  {data.subscribe.buttonText}
                 </div>
               </div>
             </div>

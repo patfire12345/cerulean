@@ -12,7 +12,7 @@ const HomeImage = ({ EN }) => {
         <div className={HomeImageCSS.imagetext}>{data.home.imagetext}</div>
         <div className={HomeImageCSS.destext}>{data.home.text}</div>
         <div className={HomeImageCSS.button}>
-          <SubscribePopup>
+          <SubscribePopup EN={EN}>
             <div className={HomeImageCSS.newsletterbutton}>
               {data.home.button}
             </div>

@@ -135,4 +135,10 @@ export const dataVN = {
       "COPYRIGHT © Cerulean Organization NPO 2023. ALL RIGHTS RESERVED",
     ],
   },
+  subscribe: {
+    title: "STAY UP TO DATE WITH OUR WORK!",
+    text: "Want to know what we're up to? Sign up for our email list here!",
+    placeholder: "Email address",
+    buttonText: "Subscribe",
+  },
 };
