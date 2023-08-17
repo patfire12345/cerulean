@@ -1,13 +1,11 @@
-import { useState } from "react";
 import Popup from "reactjs-popup";
 import PopupCSS from "../styles/SubscribePopup.module.css";
 import Image from "next/image";
 
 export default function SubscribePopup({ children }) {
-  const [open, setOpen] = useState(true);
   return (
     <div>
-      <Popup trigger={children} open={open} modal>
+      <Popup trigger={() => children} modal>
         {(close) => (
           <div className={PopupCSS.backgroundcontainer}>
             <div className={PopupCSS.modalcontainer}>
@@ -33,10 +31,7 @@ export default function SubscribePopup({ children }) {
                 />
                 <div
                   className={PopupCSS.button}
-                  onClick={() => {
-                    console.log("Subscribed to newsletter!");
-                    close();
-                  }}
+                  onClick={() => console.log("Subscribed to newsletter!")}
                 >
                   Subscribe
                 </div>

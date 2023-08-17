@@ -1,5 +1,4 @@
 import Image from "next/image";
-import WhiteButton from "../components/WhiteButton";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import HomeImageCSS from "../styles/HomeImage.module.css";
