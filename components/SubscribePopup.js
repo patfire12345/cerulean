@@ -1,4 +1,5 @@
 import Popup from "reactjs-popup";
+import ConfirmPopup from "./ConfirmPopup";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import PopupCSS from "../styles/SubscribePopup.module.css";
@@ -28,15 +29,16 @@ export default function SubscribePopup({ children, EN }) {
                   placeholder={data.subscribe.placeholder}
                   className={PopupCSS.modalinput}
                 />
-                <div
-                  className={PopupCSS.button}
-                  onClick={() => {
-                    console.log("Subscribed to newsletter!");
-                    close();
-                  }}
-                >
-                  {data.subscribe.buttonText}
-                </div>
+                <ConfirmPopup>
+                  <div
+                    className={PopupCSS.button}
+                    onClick={() => {
+                      console.log("Subscribed to newsletter!");
+                    }}
+                  >
+                    {data.subscribe.buttonText}
+                  </div>
+                </ConfirmPopup>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import Link from "next/link";
 import Image from "next/image";
+import ConfirmPopup from "./ConfirmPopup";
 
 const Footer = ({ EN }) => {
   const { data: session } = useSession();
@@ -57,7 +58,9 @@ const Footer = ({ EN }) => {
                 className={FooterCSS.newsletterinput}
                 placeholder="Email address"
               />
-              <div className={FooterCSS.newsletterbutton}>Subscribe</div>
+              <ConfirmPopup EN={EN}>
+                <div className={FooterCSS.newsletterbutton}>Subscribe</div>
+              </ConfirmPopup>
             </div>
           </div>
           <div className={FooterCSS.contactcontainer}>
@@ -128,7 +131,9 @@ const Footer = ({ EN }) => {
               className={FooterCSS.newsletterinput}
               placeholder="Email address"
             />
-            <div className={FooterCSS.newsletterbutton}>Subscribe</div>
+            <ConfirmPopup EN={EN}>
+              <div className={FooterCSS.newsletterbutton}>Subscribe!</div>
+            </ConfirmPopup>
           </div>
         </div>
         <div className={FooterCSS.contactcontainer}>
