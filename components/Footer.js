@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ConfirmPopup from "./ConfirmPopup";
 import ExclamationPopup from "./ExclamationPopup";
+import RejectPopup from "./RejectPopup";
 
 const Footer = ({ EN }) => {
   const { data: session } = useSession();
@@ -132,9 +133,9 @@ const Footer = ({ EN }) => {
               className={FooterCSS.newsletterinput}
               placeholder="Email address"
             />
-            <ConfirmPopup EN={EN}>
+            <RejectPopup EN={EN}>
               <div className={FooterCSS.newsletterbutton}>Subscribe!</div>
-            </ConfirmPopup>
+            </RejectPopup>
           </div>
         </div>
         <div className={FooterCSS.contactcontainer}>

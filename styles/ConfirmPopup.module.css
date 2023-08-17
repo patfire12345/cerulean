@@ -53,7 +53,19 @@
     position: relative;
 
     left: 410px;
-    bottom: 80px;
+    bottom: 100px;
+    
+
+    padding: 10px;
+}
+
+.Xreject {
+    cursor: pointer;
+
+    position: relative;
+
+    left: 410px;
+    bottom: 60px;
     
 
     padding: 10px;
@@ -64,4 +76,26 @@
 
     position: relative;
     left: 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: #6E9BC5 solid;
+    border-width: 1px 3px 3px 1px;
+    color: #6E9BC5;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+  
+    margin: 20px 0;
+    width: 235px;
+    height: 38px;
+    border-radius: 5px; 
+
+    cursor: pointer;
 }
