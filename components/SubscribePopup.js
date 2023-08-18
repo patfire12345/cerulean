@@ -1,12 +1,53 @@
 import Popup from "reactjs-popup";
 import ConfirmPopup from "./ConfirmPopup";
+import RejectPopup from "./RejectPopup";
 import ExclamationPopup from "./ExclamationPopup";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import PopupCSS from "../styles/SubscribePopup.module.css";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function SubscribePopup({ children, EN }) {
+  const isEmail = (email) =>
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+
+  const [email, setEmail] = useState("");
+
+  const onChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const modalSelect = () => {
+    if (isEmail(email)) {
+      return (
+        <ConfirmPopup>
+          <div
+            className={PopupCSS.button}
+            onClick={() => {
+              console.log("Subscribed to newsletter!");
+            }}
+          >
+            {data.modals.subscribe.buttonText}
+          </div>
+        </ConfirmPopup>
+      );
+    } else {
+      return (
+        <RejectPopup>
+          <div
+            className={PopupCSS.button}
+            onClick={() => {
+              console.log("Subscribed to newsletter!");
+            }}
+          >
+            {data.modals.subscribe.buttonText}
+          </div>
+        </RejectPopup>
+      );
+    }
+  };
+
   const data = EN ? dataEN : dataVN;
   return (
     <div>
@@ -33,17 +74,10 @@ export default function SubscribePopup({ children, EN }) {
                 <input
                   placeholder={data.modals.subscribe.placeholder}
                   className={PopupCSS.modalinput}
+                  name="email"
+                  onChange={onChange}
                 />
-                <ConfirmPopup>
-                  <div
-                    className={PopupCSS.button}
-                    onClick={() => {
-                      console.log("Subscribed to newsletter!");
-                    }}
-                  >
-                    {data.modals.subscribe.buttonText}
-                  </div>
-                </ConfirmPopup>
+                {modalSelect()}
               </div>
             </div>
           </div>

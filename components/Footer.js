@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import FooterCSS from "../styles/Footer.module.css";
 import { dataEN } from "../data/dataEN";
@@ -10,6 +10,10 @@ import ExclamationPopup from "./ExclamationPopup";
 import RejectPopup from "./RejectPopup";
 
 const Footer = ({ EN }) => {
+  const isEmail = (email) =>
+    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+
+  const [email, setEmail] = useState("");
   const { data: session } = useSession();
   const data = EN ? dataEN : dataVN;
 
@@ -18,6 +22,40 @@ const Footer = ({ EN }) => {
       signOut();
     }
   }, [session]);
+
+  const onChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const modalSelect = () => {
+    if (isEmail(email)) {
+      return (
+        <ConfirmPopup>
+          <div
+            className={FooterCSS.newsletterbutton}
+            onClick={() => {
+              console.log("Subscribed to newsletter!");
+            }}
+          >
+            {data.modals.subscribe.buttonText}
+          </div>
+        </ConfirmPopup>
+      );
+    } else {
+      return (
+        <RejectPopup>
+          <div
+            className={FooterCSS.newsletterbutton}
+            onClick={() => {
+              console.log("Subscribed to newsletter!");
+            }}
+          >
+            {data.modals.subscribe.buttonText}
+          </div>
+        </RejectPopup>
+      );
+    }
+  };
 
   if (session) {
     return (
@@ -132,10 +170,10 @@ const Footer = ({ EN }) => {
             <input
               className={FooterCSS.newsletterinput}
               placeholder="Email address"
+              name="email"
+              onChange={onChange}
             />
-            <RejectPopup EN={EN}>
-              <div className={FooterCSS.newsletterbutton}>Subscribe!</div>
-            </RejectPopup>
+            {modalSelect()}
           </div>
         </div>
         <div className={FooterCSS.contactcontainer}>
