@@ -1,9 +1,11 @@
 import Image from "next/image";
 import WhiteButton from "../components/WhiteButton";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import HomeImageCSS from "../styles/HomeImage.module.css";
 
-const HomeImage = () => {
+const HomeImage = ({ EN }) => {
+  const data = EN ? dataEN : dataVN;
   return (
     <div className={HomeImageCSS.image}>
       <div className={HomeImageCSS.imagecontainer}>

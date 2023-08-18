@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { data } from "../components/data.js";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import AboutCSS from "../styles/About.module.css";
 import Testimonials from "../components/Testimonials.js";
 import TestimonialsProgress from "../components/TestimonialsProgress.js";
 
-const About = () => {
+const About = ({ EN }) => {
   const [testimonialsCounter, setTestimonialsCounter] = useState(0);
+  const data = EN ? dataEN : dataVN;
   return (
     <>
       <Head>
@@ -42,7 +44,7 @@ const About = () => {
             />
           </div>
           <div>
-            <div className={AboutCSS.subtitle}>
+            <div className={AboutCSS.storysubtitle}>
               {data.about.subtitles.story}
             </div>
             <div className={AboutCSS.storydescription} />
@@ -55,6 +57,7 @@ const About = () => {
           <Testimonials
             testimonialsCounter={testimonialsCounter}
             setTestimonialsCounter={setTestimonialsCounter}
+            EN={EN}
           />
           <TestimonialsProgress
             testimonialList={data.about.testimonialsText}

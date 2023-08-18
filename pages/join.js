@@ -1,10 +1,12 @@
 import Head from "next/head";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import JoinCSS from "../styles/Join.module.css";
 import HomeImage from "../components/HomeImage";
 import Button from "../components/Button";
 
-const Join = () => {
+const Join = ({ EN }) => {
+  const data = EN ? dataEN : dataVN;
   return (
     <>
       <Head>
@@ -13,13 +15,7 @@ const Join = () => {
       </Head>
       <div>
         <div className={JoinCSS.titlecontainer}>
-          <HomeImage
-            imageCSS={JoinCSS.image}
-            imagetextCSS={JoinCSS.imagetext}
-            image={data.join.image}
-            imagetext={data.join.title}
-            alt={data.join.alt}
-          />
+          <HomeImage EN={EN} />
         </div>
         <div className={JoinCSS.descriptioncontainer}>
           <div className={JoinCSS.squarecontainer}>

@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { data } from "../components/data";
+import { dataEN } from "../data/dataEN";
+import { dataVN } from "../data/dataVN";
 import ContactCSS from "../styles/Contact.module.css";
 
-const Contact = () => {
+const Contact = ({ EN }) => {
+  const data = EN ? dataEN : dataVN;
   return (
     <>
       <Head>
