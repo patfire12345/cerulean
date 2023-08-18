@@ -30,9 +30,11 @@ export default function ExclamationPopup({ children, EN }) {
                   className={PopupCSS.image}
                 />
               </div>
-              <div className={PopupCSS.modaltitle}>Hi there,</div>
+              <div className={PopupCSS.modaltitle}>
+                {data.modals.exclamation.title}
+              </div>
               <div className={PopupCSS.modaltext}>
-                This email address is already subscribed to our newsletter.
+                {data.modals.exclamation.text}
               </div>
             </div>
           </div>

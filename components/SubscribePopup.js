@@ -23,11 +23,15 @@ export default function SubscribePopup({ children, EN }) {
                 height={17}
                 className={PopupCSS.X}
               />
-              <div className={PopupCSS.modaltitle}>{data.subscribe.title}</div>
-              <div className={PopupCSS.modaltext}>{data.subscribe.text}</div>
+              <div className={PopupCSS.modaltitle}>
+                {data.modals.subscribe.title}
+              </div>
+              <div className={PopupCSS.modaltext}>
+                {data.modals.subscribe.text}
+              </div>
               <div className={PopupCSS.subscribecontainer}>
                 <input
-                  placeholder={data.subscribe.placeholder}
+                  placeholder={data.modals.subscribe.placeholder}
                   className={PopupCSS.modalinput}
                 />
                 <ConfirmPopup>
@@ -37,7 +41,7 @@ export default function SubscribePopup({ children, EN }) {
                       console.log("Subscribed to newsletter!");
                     }}
                   >
-                    {data.subscribe.buttonText}
+                    {data.modals.subscribe.buttonText}
                   </div>
                 </ConfirmPopup>
               </div>

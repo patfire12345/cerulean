@@ -30,9 +30,11 @@ export default function RejectPopup({ children, EN }) {
                   className={PopupCSS.image}
                 />
               </div>
-              <div className={PopupCSS.modaltitle}>Oops...</div>
+              <div className={PopupCSS.modaltitle}>
+                {data.modals.reject.title}
+              </div>
               <div className={PopupCSS.modaltext}>
-                We cannot find your email.
+                {data.modals.reject.text}
               </div>
               <div
                 className={PopupCSS.button}
@@ -40,7 +42,7 @@ export default function RejectPopup({ children, EN }) {
                   close();
                 }}
               >
-                Try again
+                {data.modals.reject.button}
               </div>
             </div>
           </div>

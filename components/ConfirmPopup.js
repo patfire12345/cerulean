@@ -30,9 +30,11 @@ export default function ConfirmPopup({ children, EN }) {
                   className={PopupCSS.image}
                 />
               </div>
-              <div className={PopupCSS.modaltitle}>Thank you!</div>
+              <div className={PopupCSS.modaltitle}>
+                {data.modals.confirm.title}
+              </div>
               <div className={PopupCSS.modaltext}>
-                You’ll be sent the next issue of our newsletter shortly.
+                {data.modals.confirm.text}
               </div>
             </div>
           </div>
