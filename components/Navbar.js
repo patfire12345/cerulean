@@ -19,18 +19,19 @@ const Navbar = ({ EN, setEN }) => {
 
   return (
     <div className={NavbarCSS.navbar}>
-      <div className={NavbarCSS.logo}>
+      <Link
+        href={"/".concat(data.nav.links[0])}
+        className={NavbarCSS.logocontainer}
+      >
+        <Image
+          src="/logo.png"
+          alt="site logo"
+          width={63}
+          height={63}
+          quality={100}
+        />
         <div className={NavbarCSS.logotext}> CERULEAN ORGANIZATION </div>
-        <Link href={"/".concat(data.nav.links[0])}>
-          <Image
-            src="/logo.png"
-            alt="site logo"
-            width={63}
-            height={63}
-            quality={100}
-          />
-        </Link>
-      </div>
+      </Link>
       <div className={NavbarCSS.linkcontainer}>
         {data.nav.titles.map((title, index) => {
           if (data.nav.links[index] == "contact") {
@@ -38,6 +39,19 @@ const Navbar = ({ EN, setEN }) => {
               <BlueButton buttonLink={"/".concat(data.nav.links[index])}>
                 {title}
               </BlueButton>
+            );
+          } else if (data.nav.links[index] == "projects") {
+            return (
+              <Link
+                href={"/".concat(data.nav.links[index])}
+                className={`${
+                  router.pathname === "/".concat(data.nav.links[index])
+                    ? NavbarCSS.projectsactivelink
+                    : NavbarCSS.projectslink
+                }`}
+              >
+                {title}
+              </Link>
             );
           } else if (session || !(data.nav.links[index] == "settings")) {
             return (

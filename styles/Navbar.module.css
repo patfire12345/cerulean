@@ -25,7 +25,7 @@
   color: #333;
   text-decoration: none;
 
-  margin: 0 30px;
+  padding: 0 10px;
   display: inline-block;
 
   top: 50vh;
@@ -33,13 +33,15 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.15em;
+
+  width: 90px;
 }
 
 .activelink {
     color: #6E9BC5;
     text-decoration: none;
   
-    margin: 0 30px;
+    padding: 0 10px;
     display: inline-block;
   
     top: 50vh;
@@ -47,20 +49,54 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.15em;
+
+    width: 90px;
 }
 
-.logo {
+.projectslink {
+  color: #333;
+  text-decoration: none;
+
+  padding: 0 20px;
+  display: inline-block;
+
+  top: 50vh;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+
+  width: 90px;
+}
+
+.projectsactivelink {
+  color: #6E9BC5;
+  text-decoration: none;
+
+  padding: 0 20px;
+  display: inline-block;
+
+  top: 50vh;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+
+  width: 90px;
+}
+
+.logocontainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 150px;
 
-  /* height: 38px; */
+  text-decoration: none;
+
+  margin-right: 50px;
 }
 
 .logotext {
   color: #6E9BC5;
-  text-decoration: none;
 
   display: flex;
   justify-content: center;
@@ -70,6 +106,8 @@
   line-height: 16px;
   letter-spacing: 0.15em;
   font-weight: normal;
+
+  width: 200px;
 }
 
 .button {
