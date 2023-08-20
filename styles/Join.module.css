@@ -1,29 +1,54 @@
+.container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
 .title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 96px;
-    line-height: 110px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Helvetica;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 103px;
     letter-spacing: 0.15em;
 
-    padding: 30px;
+    width: 500px;
+}
+
+.titletext {
+    text-align: end;
+
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.15em;
+
+    width: 475px;
+    height: 90px;
+
+    margin: 20px 0;
+}
+
+.titleoutercontainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    height: 500px;
+
+    padding: 100px 200px 0 0;
 }
 
 .titlecontainer {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
 
-    height: 323.25px;
-    width: 100vw;
+    flex-direction: column;
 
-    margin-bottom: 50px;
-}
-
-.imageasdf {
-    position: absolute;
-    top: 86.43px;
-    opacity: 0.68;
+    width: 475px;
+    height: 270px;
 }
 
 .image {
@@ -52,43 +77,15 @@
 .descriptioncontainer {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-}
-
-.squarecontainer {
-    position: relative;
-    height: 172.5px;
-    width: 183px;
-    border: 1px #50769A solid;
-
-    top: 50px;
-}
-
-.toprectangle {
-    position: relative;
-    width: 156.75px;
-    height: 174px;
-    top: -86.25px;
-    left: -65.25px;
-    background-color: #6792BA;
-}
-
-.bottomrectangle {
-    position: relative;
-    width: 155.25px;
-    height: 174px;
-    top: 136.5px;
-    left: 111.75px;
-    background-color: #50769A;
+    justify-content: flex-start;
 }
 
 .textcontainer {
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    height: 400px;
+    width: 1051px;
 
-    margin: 0 100px;
+    margin: 0 100px 100px 100px;
 
     font-size: 16px;
     font-weight: 100;
@@ -101,22 +98,28 @@
     list-style-type: circle;
 }
 
+.buttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 123px;
-    height: 38px;
-
+  
+    border: #FFF9F3 solid;
+    border-width: 1px 3px 3px 1px;
+    color: #FFF9F3;
     text-decoration: none;
-    color: white;
-    border: 1px #FFF9F3 solid;
-    border-radius: 5px;
-
+    font-family: Helvetica;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.15em;
-
-    margin: 10px 0;
+  
+    margin: 20px 0;
+    width: 78px;
+    height: 38px;
+    border-radius: 5px; 
 }

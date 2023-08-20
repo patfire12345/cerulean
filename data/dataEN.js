@@ -86,8 +86,7 @@ export const dataEN = {
     image: "/join_img.jpg",
     alt: "joinus",
     description: {
-      start:
-        "If you are looking to make a difference and wish to work in a dynamic, youthful and professional environment, join our cause! You’ll get to: ",
+      start: "As a volunteer, you'll have the opportunity to: ",
       middle: [
         "Participate in a dynamic, multicultural, professional and fun environment",
         "Enhance your knowledge and improve your social skills",
@@ -96,7 +95,7 @@ export const dataEN = {
         "Receive a certificate once having completed 80% of work",
         "Receive a recommendation letter written by Core Team",
       ],
-      end: "The Cerulean family always welcomes you!",
+      end: "Your dedication and enthusiasm are invaluable to us, and we can't wait to welcome you to the Cerulean family.",
     },
     button: "APPLY NOW",
   },
