@@ -51,27 +51,15 @@
     height: 270px;
 }
 
-.image {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    width: 100vw;
+.backgroundimage {
+    object-fit: cover;
+    z-index: -2;
 }
-  
-.imagetext {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+
+.backgroundanimationimage {
+    object-fit: cover; 
+    z-index: -1;
     position: absolute;
-    background-color:#2C2B2BAD;
-    font-size: 96px;
-    line-height: 110px;
-    letter-spacing: 0.15em;
-    z-index: 2;
 }
 
 .descriptioncontainer {

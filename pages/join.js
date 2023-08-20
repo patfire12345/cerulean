@@ -17,14 +17,14 @@ const Join = ({ EN }) => {
           src={data.join.image[0]}
           fill={true}
           quality={100}
-          style={{ objectFit: "cover", zIndex: -2 }}
+          className={JoinCSS.backgroundimage}
         />
         <Image
           src={data.join.image[1]}
           width={821}
           height={566}
           quality={100}
-          style={{ objectFit: "cover", zIndex: -1, position: "absolute" }}
+          className={JoinCSS.backgroundanimationimage}
         />
         <div className={JoinCSS.titleoutercontainer}>
           <div className={JoinCSS.titlecontainer}>
