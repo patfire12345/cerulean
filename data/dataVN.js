@@ -85,8 +85,9 @@ export const dataVN = {
     },
   },
   join: {
-    title: "Join Us",
-    image: "/join_img.jpg",
+    title: "JOIN US!",
+    text: "Exciting news! We are excited to announce that our recruitment season is now open! If you're looking to contribute to a dynamic, multicultural, and professional environment, we invite you to apply and join our cause.",
+    image: ["/join_bg.jpg", "/join_animation_img.png"],
     alt: "joinus",
     description: {
       start: "As a volunteer, you'll have the opportunity to: ",
@@ -100,7 +101,7 @@ export const dataVN = {
       ],
       end: "Your dedication and enthusiasm are invaluable to us, and we can't wait to welcome you to the Cerulean family.",
     },
-    button: "APPLY NOW",
+    button: "APPLY",
   },
   contact: {
     infotext: "Để biết thêm thông tin, ",

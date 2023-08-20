@@ -3,7 +3,6 @@ import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import JoinCSS from "../styles/Join.module.css";
 import Image from "next/image";
-import Button from "../components/Button";
 
 const Join = ({ EN }) => {
   const data = EN ? dataEN : dataVN;
@@ -15,13 +14,13 @@ const Join = ({ EN }) => {
       </Head>
       <div className={JoinCSS.container}>
         <Image
-          src="/join_bg.jpg"
+          src={data.join.image[0]}
           fill={true}
           quality={100}
           style={{ objectFit: "cover", zIndex: -2 }}
         />
         <Image
-          src="/join_animation_img.png"
+          src={data.join.image[1]}
           width={821}
           height={566}
           quality={100}
@@ -29,16 +28,11 @@ const Join = ({ EN }) => {
         />
         <div className={JoinCSS.titleoutercontainer}>
           <div className={JoinCSS.titlecontainer}>
-            <div className={JoinCSS.title}>JOIN US!</div>
-            <div className={JoinCSS.titletext}>
-              Exciting news! We are excited to announce that our recruitment
-              season is now open! If you're looking to contribute to a dynamic,
-              multicultural, and professional environment, we invite you to
-              apply and join our cause.{" "}
-            </div>
+            <div className={JoinCSS.title}>{data.join.title}</div>
+            <div className={JoinCSS.titletext}>{data.join.text}</div>
             <div className={JoinCSS.buttoncontainer}>
               <a href={data.contact.links[2]} className={JoinCSS.button}>
-                Apply
+                {data.join.button}
               </a>
             </div>
           </div>
