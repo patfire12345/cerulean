@@ -115,6 +115,18 @@
     color: #6E9BC5;
 }
 
+.newsletterinput::placeholder {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    
+    color: #6E9BC5;
+
+    padding-left: 20px;
+}
+
 .newsletterbutton {
     display: flex;
     align-items: center;

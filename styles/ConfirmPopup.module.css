@@ -1,0 +1,107 @@
+.backgroundcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(0,0,0,0.65);
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    width: 900px;
+    height: 500px;
+
+    background: #FFFFFF;
+}
+
+.modaltitle {
+    padding-bottom: 20px;
+
+    font-family: Helvetica;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+
+    text-align: center;
+
+    color: #6E9BC5;
+}
+
+.modaltext {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.15em;
+
+    text-align: center;
+    
+    color: #6E9BC5;
+}
+
+.X {
+    cursor: pointer;
+
+    position: relative;
+
+    left: 410px;
+    bottom: 100px;
+    
+
+    padding: 10px;
+}
+
+.Xreject {
+    cursor: pointer;
+
+    position: relative;
+
+    left: 410px;
+    bottom: 60px;
+    
+
+    padding: 10px;
+}
+
+.imagecontainer {
+    margin-bottom: 20px;
+
+    position: relative;
+    left: 15px;
+}
+
+.image {
+    position: relative;
+    right: 19.5px;
+    top: 19.5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: #6E9BC5 solid;
+    border-width: 1px 3px 3px 1px;
+    color: #6E9BC5;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+  
+    margin: 20px 0;
+    width: 235px;
+    height: 38px;
+    border-radius: 5px; 
+
+    cursor: pointer;
+}

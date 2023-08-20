@@ -44,3 +44,25 @@
     align-items:flex-start;
     justify-content:flex-start;
   }
+
+  .newsletterbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: #FFF9F3 solid;
+    border-width: 1px 3px 3px 1px;
+    color: #FFF9F3;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+  
+    margin: 20px 0;
+    width: 235px;
+    height: 38px;
+    border-radius: 5px; 
+
+    cursor: pointer;
+  }

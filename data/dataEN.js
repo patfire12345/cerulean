@@ -137,4 +137,25 @@ export const dataEN = {
       "COPYRIGHT © Cerulean Organization NPO 2023. ALL RIGHTS RESERVED",
     ],
   },
+  modals: {
+    subscribe: {
+      title: "STAY UP TO DATE WITH OUR WORK!",
+      text: "Want to know what we're up to? Sign up for our email list here!",
+      placeholder: "Email address",
+      buttonText: "Subscribe",
+    },
+    confirm: {
+      title: "Thank you!",
+      text: "You’ll be sent the next issue of our newsletter shortly.",
+    },
+    exclamation: {
+      title: "Hi there,",
+      text: "This email address is already subscribed to our newsletter.",
+    },
+    reject: {
+      title: "Oops...",
+      text: "We cannot find your email.",
+      button: "Try again",
+    },
+  },
 };
