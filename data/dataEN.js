@@ -82,12 +82,12 @@ export const dataEN = {
     },
   },
   join: {
-    title: "Join Us",
-    image: "/join_img.jpg",
+    title: "JOIN US!",
+    text: "Exciting news! We are excited to announce that our recruitment season is now open! If you're looking to contribute to a dynamic, multicultural, and professional environment, we invite you to apply and join our cause.",
+    image: ["/join_bg.jpg", "/join_animation_img.png"],
     alt: "joinus",
     description: {
-      start:
-        "If you are looking to make a difference and wish to work in a dynamic, youthful and professional environment, join our cause! You’ll get to: ",
+      start: "As a volunteer, you'll have the opportunity to: ",
       middle: [
         "Participate in a dynamic, multicultural, professional and fun environment",
         "Enhance your knowledge and improve your social skills",
@@ -96,9 +96,9 @@ export const dataEN = {
         "Receive a certificate once having completed 80% of work",
         "Receive a recommendation letter written by Core Team",
       ],
-      end: "The Cerulean family always welcomes you!",
+      end: "Your dedication and enthusiasm are invaluable to us, and we can't wait to welcome you to the Cerulean family.",
     },
-    button: "APPLY NOW",
+    button: "APPLY",
   },
   contact: {
     infotext: "For more information, ",

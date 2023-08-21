@@ -2,8 +2,7 @@ import Head from "next/head";
 import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import JoinCSS from "../styles/Join.module.css";
-import HomeImage from "../components/HomeImage";
-import Button from "../components/Button";
+import Image from "next/image";
 
 const Join = ({ EN }) => {
   const data = EN ? dataEN : dataVN;
@@ -13,16 +12,32 @@ const Join = ({ EN }) => {
         <title>Cerulean | Join Us</title>
         <meta name="keywords" content="cerulean" />
       </Head>
-      <div>
-        <div className={JoinCSS.titlecontainer}>
-          <HomeImage EN={EN} />
-        </div>
-        <div className={JoinCSS.descriptioncontainer}>
-          <div className={JoinCSS.squarecontainer}>
-            <div className={JoinCSS.toprectangle}>
-              <div className={JoinCSS.bottomrectangle} />
+      <div className={JoinCSS.container}>
+        <Image
+          src={data.join.image[0]}
+          fill={true}
+          quality={100}
+          className={JoinCSS.backgroundimage}
+        />
+        <Image
+          src={data.join.image[1]}
+          width={821}
+          height={566}
+          quality={100}
+          className={JoinCSS.backgroundanimationimage}
+        />
+        <div className={JoinCSS.titleoutercontainer}>
+          <div className={JoinCSS.titlecontainer}>
+            <div className={JoinCSS.title}>{data.join.title}</div>
+            <div className={JoinCSS.titletext}>{data.join.text}</div>
+            <div className={JoinCSS.buttoncontainer}>
+              <a href={data.contact.links[2]} className={JoinCSS.button}>
+                {data.join.button}
+              </a>
             </div>
           </div>
+        </div>
+        <div className={JoinCSS.descriptioncontainer}>
           <div className={JoinCSS.textcontainer}>
             <div>{data.join.description.start}</div>
             <br />
@@ -33,9 +48,6 @@ const Join = ({ EN }) => {
             </ul>
             <br />
             <div>{data.join.description.end}</div>
-            <Button buttonCSS={JoinCSS.button} buttonLink="">
-              {data.join.button}
-            </Button>
           </div>
         </div>
       </div>
