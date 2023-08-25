@@ -8,6 +8,7 @@ export default function Home({ EN }) {
       <Head>
         <title>Cerulean | Home</title>
         <meta name="keywords" content="cerulean" />
+        <link rel="icon" href="/icon.png" type="image" />
       </Head>
       <HomeImage EN={EN} />
     </div>

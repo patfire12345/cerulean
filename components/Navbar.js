@@ -73,20 +73,20 @@ const Navbar = ({ EN, setEN }) => {
         <div
           className={NavbarCSS.languagebutton}
           onClick={() => {
-            setEN(!EN);
+            setEN(true);
           }}
         >
           <Image src={"/english.png"} width={16} height={8} />
-          <div style={{ color: "black", paddingLeft: "5px" }}>EN</div>
+          <div className={NavbarCSS.languagetext}>EN</div>
         </div>
         <div
           className={NavbarCSS.languagebutton}
           onClick={() => {
-            setEN(!EN);
+            setEN(false);
           }}
         >
           <Image src={"/vietnamese.png"} width={16} height={8} />
-          <div style={{ color: "black", paddingLeft: "5px" }}>VN</div>
+          <div className={NavbarCSS.languagetext}>VN</div>
         </div>
       </div>
     </div>
