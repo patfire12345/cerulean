@@ -6,8 +6,10 @@ import { dataEN } from "../data/dataEN";
 import { dataVN } from "../data/dataVN";
 import { useRouter } from "next/router";
 import BlueButton from "./BlueButton";
+import { useSession } from "next-auth/react";
 
 const Navbar = ({ EN, setEN }) => {
+  const { data: session } = useSession();
   const router = useRouter();
   const [data, setData] = useState(EN ? dataEN : dataVN);
 
@@ -17,17 +19,19 @@ const Navbar = ({ EN, setEN }) => {
 
   return (
     <div className={NavbarCSS.navbar}>
-      <div className={NavbarCSS.logo}>
-        <Link href={"/".concat(data.nav.links[0])}>
-          <Image
-            src="/logo.png"
-            alt="site logo"
-            width={63}
-            height={63}
-            quality={100}
-          />
-        </Link>
-      </div>
+      <Link
+        href={"/".concat(data.nav.links[0])}
+        className={NavbarCSS.logocontainer}
+      >
+        <Image
+          src="/logo.png"
+          alt="site logo"
+          width={63}
+          height={63}
+          quality={100}
+        />
+        <div className={NavbarCSS.logotext}> CERULEAN ORGANIZATION </div>
+      </Link>
       <div className={NavbarCSS.linkcontainer}>
         {data.nav.titles.map((title, index) => {
           if (data.nav.links[index] == "contact") {
@@ -36,7 +40,20 @@ const Navbar = ({ EN, setEN }) => {
                 {title}
               </BlueButton>
             );
-          } else {
+          } else if (data.nav.links[index] == "projects") {
+            return (
+              <Link
+                href={"/".concat(data.nav.links[index])}
+                className={`${
+                  router.pathname === "/".concat(data.nav.links[index])
+                    ? NavbarCSS.projectsactivelink
+                    : NavbarCSS.projectslink
+                }`}
+              >
+                {title}
+              </Link>
+            );
+          } else if (session || !(data.nav.links[index] == "settings")) {
             return (
               <Link
                 href={"/".concat(data.nav.links[index])}
@@ -56,20 +73,20 @@ const Navbar = ({ EN, setEN }) => {
         <div
           className={NavbarCSS.languagebutton}
           onClick={() => {
-            setEN(!EN);
+            setEN(true);
           }}
         >
           <Image src={"/english.png"} width={16} height={8} />
-          <div style={{ color: "black", paddingLeft: "5px" }}>EN</div>
+          <div className={NavbarCSS.languagetext}>EN</div>
         </div>
         <div
           className={NavbarCSS.languagebutton}
           onClick={() => {
-            setEN(!EN);
+            setEN(false);
           }}
         >
           <Image src={"/vietnamese.png"} width={16} height={8} />
-          <div style={{ color: "black", paddingLeft: "5px" }}>VN</div>
+          <div className={NavbarCSS.languagetext}>VN</div>
         </div>
       </div>
     </div>

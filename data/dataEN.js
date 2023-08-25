@@ -1,7 +1,7 @@
 export const dataEN = {
   nav: {
-    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT"],
-    links: ["", "about", "projects", "join", "contact"],
+    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT", "SETTINGS"],
+    links: ["", "about", "projects", "join", "contact", "settings"],
   },
   home: {
     text: "Cerulean thrives to build a sustainable future for all children and young people. The organization works towards a world where every child is heard, treated with respect, and loved.",
@@ -115,6 +115,52 @@ export const dataEN = {
       "https://www.facebook.com/c3rulean.org?mibextid=ZbWKwL",
       "https://instagram.com/cerulean_org?igshid=MzRlODBiNWFlZA==",
     ],
-    icons: ["/linkedin.png", "/email.png", "/facebook.png", "/instagram.png"],
+    icons: [
+      "/linkedin_sm.png",
+      "/email_sm.png",
+      "/facebook_sm.png",
+      "/instagram_sm.png",
+    ],
+  },
+  footer: {
+    titles: ["HOME", "ABOUT", "PROJECTS", "JOIN US", "CONTACT"],
+    links: ["", "about", "projects", "join", "contact"],
+    icons: [
+      "/linkedin_lg.png",
+      "/email_lg.png",
+      "/facebook_lg.png",
+      "/instagram_lg.png",
+    ],
+    explore: ["EXPLORE"],
+    portal: ["PORTAL", "LOGIN", "LOGOUT"],
+    newsletter: [
+      "NEWSLETTER",
+      "Want to know what we’re up to? Sign up for our email list here!",
+    ],
+    contact: ["LET'S KEEP IN TOUCH!", "CONTACT"],
+    copyright: [
+      "COPYRIGHT © Cerulean Organization NPO 2023. ALL RIGHTS RESERVED",
+    ],
+  },
+  modals: {
+    subscribe: {
+      title: "STAY UP TO DATE WITH OUR WORK!",
+      text: "Want to know what we're up to? Sign up for our email list here!",
+      placeholder: "Email address",
+      buttonText: "Subscribe",
+    },
+    confirm: {
+      title: "Thank you!",
+      text: "You’ll be sent the next issue of our newsletter shortly.",
+    },
+    exclamation: {
+      title: "Hi there,",
+      text: "This email address is already subscribed to our newsletter.",
+    },
+    reject: {
+      title: "Oops...",
+      text: "We cannot find your email.",
+      button: "Try again",
+    },
   },
 };

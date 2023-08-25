@@ -92,6 +92,7 @@ const About = ({ EN }) => {
           <Testimonials
             testimonialsCounter={testimonialsCounter}
             setTestimonialsCounter={setTestimonialsCounter}
+            EN={EN}
           />
           <TestimonialsProgress
             testimonialList={data.about.testimonialsText}

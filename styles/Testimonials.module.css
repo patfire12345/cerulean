@@ -33,14 +33,18 @@
 .name {
     text-align: right;
 
-    width: 600px;
-    margin: 50px 150px;
+    width: 450px;
+    margin: 50px 225px;
 
     font-family: Helvetica;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 100;
     line-height: 29px;
     letter-spacing: 0.15em;
+    opacity: 80%;
+
+    position: relative;
+    top: -25px;
 }
 
 .progressContainer {
