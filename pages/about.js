@@ -6,6 +6,7 @@ import { dataVN } from "../data/dataVN";
 import AboutCSS from "../styles/About.module.css";
 import Testimonials from "../components/Testimonials.js";
 import TestimonialsProgress from "../components/TestimonialsProgress.js";
+import AboutImage from "../components/AboutImage";
 
 const About = ({ EN }) => {
   const [testimonialsCounter, setTestimonialsCounter] = useState(0);
@@ -46,36 +47,7 @@ const About = ({ EN }) => {
           </div>
         </div>
         <div className={AboutCSS.storycontainer}>
-          <div>
-            <Image
-              src="/about_img.jpg"
-              alt="story"
-              height={410}
-              width={342}
-              quality={100}
-              className={AboutCSS.storyimage}
-            />
-          </div>
-          <div>
-            <Image
-              src="/about_sticker.png"
-              alt="story"
-              height={50}
-              width={25}
-              quality={100}
-              className={AboutCSS.storysticker1}
-            />
-          </div>
-          <div>
-            <Image
-              src="/about_sticker.png"
-              alt="story"
-              height={50}
-              width={25}
-              quality={100}
-              className={AboutCSS.storysticker2}
-            />
-          </div>
+          <AboutImage />
           <div>
             <div className={AboutCSS.storysubtitle}>
               {data.about.subtitles.story}
