@@ -48,7 +48,7 @@ const About = ({ EN }) => {
         </div>
         <div className={AboutCSS.storycontainer}>
           <AboutImage />
-          <div>
+          <div className={AboutCSS.storydescriptioncontainer}>
             <div className={AboutCSS.storysubtitle}>
               {data.about.subtitles.story}
             </div>
