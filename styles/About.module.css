@@ -6,7 +6,14 @@
     line-height: 110px;
     letter-spacing: 0.15em;
 
-    padding-top: 9vw;
+    padding-top: 50px;
+}
+
+.titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .subtitle {
@@ -41,12 +48,9 @@
     line-height: 23px;
     letter-spacing: 0.15em;
 
-    width: 65vw;
+    width: 90vw;
     height: 20vw;
-    margin-right: 17vw;
-    margin-left: 17vw;
-    position: relative;
-    padding-bottom: 9vw;
+    padding-top: 50px;
 
     color: #FFFFFF;
 
@@ -55,11 +59,11 @@
 
 .aboutbackground {
     z-index: -1;
-    object-fit: "cover";
+    object-fit: cover;
 }
 
 .valuebox {
-    padding: 6vw 0;
+    padding: 16vw 0;
 }
 
 .valuecontainer {
@@ -68,7 +72,7 @@
     justify-content: center;
 
     height: 10vw;
-    padding-top: 3vw;
+    padding-top: 10vw;
 }
 
 .valuegrid {

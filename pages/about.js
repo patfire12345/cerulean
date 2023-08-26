@@ -18,7 +18,7 @@ const About = ({ EN }) => {
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <div>
+        <div className={AboutCSS.titlecontainer}>
           <Image
             src="/about_background.png"
             alt="about"
