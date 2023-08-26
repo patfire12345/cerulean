@@ -33,6 +33,11 @@ export const dataEN = {
         "We value each other's abilities, goals and learning. We encourage and support all to exhibit a sense of independence and freedom.",
       ],
     ],
+    storyDescription: [
+      [
+        "At first, Cerulean was “tiny” with only a few core members being students at Lycée Français Alexandre Yersin international school, hoping to spread French language and culture to youth across Vietnam. After one year, with continuous hard work and non-stop effort, we have gradually gained support from people in which “a group of students” now turns into a big family of around 100 members coming from all over the country and across the world.",
+      ],
+    ],
     testimonialsText: [
       [
         "I came for Project 1,\nI stayed for Cerulean.",

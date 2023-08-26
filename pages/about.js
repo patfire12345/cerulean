@@ -6,6 +6,7 @@ import { dataVN } from "../data/dataVN";
 import AboutCSS from "../styles/About.module.css";
 import Testimonials from "../components/Testimonials.js";
 import TestimonialsProgress from "../components/TestimonialsProgress.js";
+import AboutImage from "../components/AboutImage";
 
 const About = ({ EN }) => {
   const [testimonialsCounter, setTestimonialsCounter] = useState(0);
@@ -17,37 +18,43 @@ const About = ({ EN }) => {
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <div className={AboutCSS.title}>{data.about.title}</div>
-        <div className={AboutCSS.description}>{data.about.aboutUs}</div>
-        <div className={AboutCSS.subtitle}>{data.about.subtitles.core}</div>
-        <div className={AboutCSS.valuecontainer}>
-          <div className={AboutCSS.valuegrid}>
-            {data.about.ourCoreValues.map((valueList) => {
-              return <div className={AboutCSS.value}>{valueList[0]}</div>;
-            })}
-            {data.about.ourCoreValues.map((valueList) => {
-              return (
-                <div className={AboutCSS.valuedescription}>{valueList[1]}</div>
-              );
-            })}
+        <div className={AboutCSS.titlecontainer}>
+          <Image
+            src="/about_background.png"
+            alt="about"
+            fill={true}
+            quality={100}
+            className={AboutCSS.aboutbackground}
+          />
+          <div className={AboutCSS.title}>{data.about.title}</div>
+          <div className={AboutCSS.description}>{data.about.aboutUs}</div>
+        </div>
+        <div className={AboutCSS.valuebox}>
+          <div className={AboutCSS.subtitle}>{data.about.subtitles.core}</div>
+          <div className={AboutCSS.valuecontainer}>
+            <div className={AboutCSS.valuegrid}>
+              {data.about.ourCoreValues.map((valueList) => {
+                return <div className={AboutCSS.value}>{valueList[0]}</div>;
+              })}
+              {data.about.ourCoreValues.map((valueList) => {
+                return (
+                  <div className={AboutCSS.valuedescription}>
+                    {valueList[1]}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div className={AboutCSS.storycontainer}>
-          <div>
-            <Image
-              src="/about_img.jpg"
-              alt="story"
-              height={405}
-              width={570}
-              quality={100}
-              className={AboutCSS.storyimage}
-            />
-          </div>
-          <div>
+          <AboutImage />
+          <div className={AboutCSS.storydescriptioncontainer}>
             <div className={AboutCSS.storysubtitle}>
               {data.about.subtitles.story}
             </div>
-            <div className={AboutCSS.storydescription} />
+            <div className={AboutCSS.storydescription}>
+              {data.about.storyDescription}
+            </div>
           </div>
         </div>
         <div className={AboutCSS.testimonialscontainer}>
