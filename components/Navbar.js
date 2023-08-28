@@ -77,7 +77,13 @@ const Navbar = ({ EN, setEN }) => {
           }}
         >
           <Image src={"/english.png"} width={16} height={8} />
-          <div className={NavbarCSS.languagetext}>EN</div>
+          <div
+            className={
+              EN ? NavbarCSS.languagebuttonactive : NavbarCSS.languagebutton
+            }
+          >
+            EN
+          </div>
         </div>
         <div
           className={NavbarCSS.languagebutton}
@@ -86,7 +92,13 @@ const Navbar = ({ EN, setEN }) => {
           }}
         >
           <Image src={"/vietnamese.png"} width={16} height={8} />
-          <div className={NavbarCSS.languagetext}>VN</div>
+          <div
+            className={
+              EN ? NavbarCSS.languagebutton : NavbarCSS.languagebuttonactive
+            }
+          >
+            VN
+          </div>
         </div>
       </div>
     </div>
